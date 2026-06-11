@@ -60,7 +60,13 @@ The project was designed from the ground up with a modular architecture that cle
 - **Smooth camera snap** — one-click camera rotation to orthographic-aligned views (front, back, left, right, top, bottom) with animated transition
 
 ### Exploded Views
+
+The platform supports both full-model and subsystem-level exploded views, enabling engineers to better understand spatial relationships, assembly structure and component positioning.
+
+![Global Exploded View](./public/images/exploded.png)
+
 - **Global explode** — separates all 13 ship systems simultaneously using a hand-authored CAD-style displacement config with per-part offset vectors and rotations; animated with a custom smoothstep RAF loop (2.2 s duration)
+
 - **Per-system explode** — isolates and explodes a single selected system, with each subgroup configured for a specific direction and travel distance; uses GSAP when available with a RAF fallback
 
 ### Hierarchical Navigation
