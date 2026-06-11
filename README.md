@@ -1,18 +1,24 @@
 <div align="center">
 
+<img src="./images/github_logo.png" alt="SMECO 2.0 Logo" width="180"/>
+
 # SMECO 2.0 — Ship Engine Viewer
 
-**A production-grade interactive 3D digital twin platform for marine propulsion systems**
+A production-grade interactive 3D digital twin platform for marine propulsion systems.
 
-[![Three.js](https://img.shields.io/badge/Three.js-0.160.0-black?logo=three.js&logoColor=white)](https://threejs.org)
-[![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![Express](https://img.shields.io/badge/Express-5.x-000000?logo=express&logoColor=white)](https://expressjs.com)
+[![Three.js](https://img.shields.io/badge/Three.js-0.160.0-black?logo=three.js\&logoColor=white)](https://threejs.org)
+[![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite\&logoColor=white)](https://vitejs.dev)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=nodedotjs\&logoColor=white)](https://nodejs.org)
+[![Express](https://img.shields.io/badge/Express-5.x-000000?logo=express\&logoColor=white)](https://expressjs.com)
 [![License](https://img.shields.io/badge/License-ISC-blue)](LICENSE)
 
 [Live Demo](#) · [Report Bug](https://github.com/alphawave-software/engine/issues) · [Request Feature](https://github.com/alphawave-software/engine/issues)
 
 </div>
+
+---
+
+![SMECO 2.0 Hero Banner](./docs/images/hero-banner.jpg)
 
 ---
 
