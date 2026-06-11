@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./images/github_logo.png" alt="SMECO 2.0 Logo" width="180"/>
+<img src="/images/github_logo.png" alt="SMECO 2.0 Logo" width="180"/>
 
 # SMECO 2.0 — Ship Engine Viewer
 
