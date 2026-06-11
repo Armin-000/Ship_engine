@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="github_logo.png" alt="SMECO 2.0 Logo" width="180"/>
+<img src="./public/images/github_logo.png" alt="SMECO 2.0 Logo" width="180"/>
 
-# SMECO 2.0 — Ship engine viewer
+# SMECO 2.0 - Ship engine viewer
 
 A production-grade interactive 3D digital twin platform for marine propulsion systems.
 
