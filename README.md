@@ -2,7 +2,7 @@
 
 <img src="github_logo.png" alt="SMECO 2.0 Logo" width="180"/>
 
-# SMECO 2.0 — Ship Engine Viewer
+# SMECO 2.0 — Ship engine viewer
 
 A production-grade interactive 3D digital twin platform for marine propulsion systems.
 
@@ -18,7 +18,7 @@ A production-grade interactive 3D digital twin platform for marine propulsion sy
 
 ---
 
-![SMECO 2.0 Hero Banner](./docs/images/hero-banner.jpg)
+![SMECO 2.0 Hero Banner](hero.png)
 
 ---
 
