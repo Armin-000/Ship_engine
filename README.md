@@ -433,7 +433,7 @@ Each system contains a hierarchy of assemblies, subassemblies, and individual na
 
 ## License
 
-ISC — see [LICENSE](LICENSE) for details.
+ISC — see [LICENSE](LICENSE.md) for details.
 
 ---
 
