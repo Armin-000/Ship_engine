@@ -18,7 +18,7 @@ A production-grade interactive 3D digital twin platform for marine propulsion sy
 
 ---
 
-![SMECO 2.0 Hero Banner](hero.png)
+![SMECO 2.0 Hero Banner](./public/images/hero.png)
 
 ---
 
