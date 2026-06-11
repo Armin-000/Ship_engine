@@ -1,0 +1,22 @@
+body.theme-light .component-toggle{
+  background: rgba(255,255,255,0.78);
+  border-color: rgba(0,0,0,0.18);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.18);
+}
+
+body.theme-light .component-toggle:hover{
+  background: rgba(255,255,255,0.92);
+  border-color: rgba(0,0,0,0.26);
+  box-shadow: 0 22px 56px rgba(0,0,0,0.22);
+}
+
+body.theme-light .hamburger span{
+  background: rgba(0,0,0,0.92);
+}
+
+body.theme-light .toggle-x path{
+  fill: rgba(0,0,0,0.92);
+}
+
+.engine-label-layer.labels--hover-dim .engine-label { opacity: 0.25; transition: opacity 120ms ease; }
+.engine-label-layer.labels--hover-dim .engine-label.is-hovered { opacity: 1; }

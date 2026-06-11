@@ -1,0 +1,185 @@
+/* =========================================================
+   ONE UNIVERSAL COLOR FOR ALL CONTROL BUTTONS
+   WORKS THE SAME IN DARK & LIGHT MODE
+========================================================= */
+
+:root{
+  --btn-bg: rgba(35,35,35,0.72);
+  --btn-hover: rgba(15,15,15,0.92);
+
+  --btn-border: rgba(255,255,255,0.22);
+
+  --btn-icon: #ffffff;
+}
+
+/* =========================================================
+   ALL BUTTONS
+========================================================= */
+
+.component-toggle,
+.theme-toggle,
+.mode-toggle,
+.rotation-control,
+.rotation-btn,
+.explode-btn,
+.reset-btn,
+.control-btn{
+  background: var(--btn-bg) !important;
+  border: 1px solid var(--btn-border) !important;
+
+  color: var(--btn-icon) !important;
+
+  backdrop-filter: blur(14px) saturate(1.15);
+  -webkit-backdrop-filter: blur(14px) saturate(1.15);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
+
+.component-toggle:hover,
+.theme-toggle:hover,
+.mode-toggle:hover,
+.rotation-control:hover,
+.rotation-btn:hover,
+.explode-btn:hover,
+.reset-btn:hover,
+.control-btn:hover{
+  background: var(--btn-hover) !important;
+
+  border-color: rgba(255,255,255,0.38) !important;
+}
+
+/* =========================================================
+   SVG ICONS
+========================================================= */
+
+.component-toggle svg,
+.theme-toggle svg,
+.mode-toggle svg,
+.rotation-control svg,
+.rotation-btn svg,
+.explode-btn svg,
+.reset-btn svg,
+.control-btn svg{
+  fill: var(--btn-icon) !important;
+  stroke: var(--btn-icon) !important;
+  color: var(--btn-icon) !important;
+}
+
+/* =========================================================
+   HAMBURGER ICON
+========================================================= */
+
+.hamburger{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+
+  transition: opacity 220ms ease;
+}
+
+.hamburger span{
+  width: calc(var(--ctrl-btn-size) * 0.375);
+  height: 2px;
+
+  background: var(--btn-icon) !important;
+
+  border-radius: 999px;
+
+  display:block;
+
+  transition: 220ms ease;
+}
+
+/* Hide hamburger when open */
+.component-toggle.open .hamburger{
+  opacity:0;
+}
+
+/* =========================================================
+   X ICON
+========================================================= */
+
+.toggle-x{
+  position:absolute;
+
+  width: calc(var(--ctrl-btn-size) * 0.42);
+  height: calc(var(--ctrl-btn-size) * 0.42);
+
+  opacity:0;
+
+  transform:scale(.7);
+
+  pointer-events:none;
+
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.toggle-x path{
+  fill: var(--btn-icon) !important;
+}
+
+.component-toggle.open .toggle-x{
+  opacity:1;
+  transform:scale(1);
+}
+
+/* =========================================================
+   COMPONENT TOGGLE BUTTON
+========================================================= */
+
+.component-toggle{
+  position: fixed;
+
+  top: calc(var(--ctrl-inset) + env(safe-area-inset-top,0px));
+  left: calc(var(--ctrl-inset) + env(safe-area-inset-left,0px));
+  right: auto;
+
+  width: var(--ctrl-btn-size);
+  height: var(--ctrl-btn-size);
+
+  border-radius: var(--ctrl-radius);
+
+  display:inline-grid;
+  place-items:center;
+
+  cursor:pointer;
+
+  z-index:10050;
+}
+
+/* =========================================================
+   FORCE SAME COLORS IN LIGHT & DARK MODE
+========================================================= */
+
+body.light .component-toggle,
+body.dark .component-toggle,
+body.light .theme-toggle,
+body.dark .theme-toggle,
+body.light .mode-toggle,
+body.dark .mode-toggle,
+body.light .rotation-control,
+body.dark .rotation-control,
+body.light .rotation-btn,
+body.dark .rotation-btn,
+body.light .explode-btn,
+body.dark .explode-btn,
+body.light .reset-btn,
+body.dark .reset-btn,
+body.light .control-btn,
+body.dark .control-btn{
+  background: var(--btn-bg) !important;
+  border-color: var(--btn-border) !important;
+  color: var(--btn-icon) !important;
+}

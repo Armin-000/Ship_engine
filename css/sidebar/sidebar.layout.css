@@ -1,0 +1,217 @@
+.component-sidebar{
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--sb-w);
+  height: 100dvh;
+  z-index: 10000;
+
+  transform: translate3d(-110%,0,0);
+  transition: transform var(--dur) var(--ease);
+  pointer-events: none;
+
+  padding-left: var(--safe-left);
+  padding-right: 0;
+  will-change: transform;
+}
+
+.component-sidebar.open{
+  transform: translate3d(0,0,0);
+  pointer-events: auto;
+}
+/*
+.component-sidebar::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(900px 700px at 75% 15%, rgba(56,189,248,.10), transparent 60%),
+    linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.70));
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease);
+  pointer-events: none;
+}
+
+.component-sidebar.open::before{
+  opacity: 1;
+  pointer-events: auto;
+}
+*/
+.component-sidebar-inner{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    linear-gradient(180deg, var(--bg1), var(--bg0));
+
+  border-right: 1px solid var(--stroke);
+  border-top-right-radius: var(--sb-radius);
+  border-bottom-right-radius: var(--sb-radius);
+
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: var(--text);
+
+  backdrop-filter: blur(var(--blur)) saturate(1.18);
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(1.18);
+
+  overflow: hidden;
+  contain: layout paint;
+}
+
+.component-sidebar-header{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  padding: calc(14px + var(--safe-top)) var(--sb-pad) 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.component-sidebar-title{
+  margin: 15px;
+  font-size: var(--t-title);
+  font-weight: 900;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.component-sidebar-title::after{
+  content: "Select a part to focus";
+  display: block;
+  margin-top: 6px;
+
+  font-size: var(--t-sub);
+  font-weight: 650;
+  letter-spacing: .02em;
+  text-transform: none;
+  color: var(--muted);
+}
+
+.component-close{
+  margin-left: auto;
+  width: var(--toggle-size);
+  height: var(--toggle-size);
+  border-radius: 999px;
+
+  border: 0px solid rgba(255,255,255,.22);
+  background: transparent;
+  color: rgba(255,255,255,.94);
+
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+
+  box-shadow: var(--shadow2);
+  transition: transform 160ms var(--ease2), background 160ms var(--ease2), border-color 160ms var(--ease2), box-shadow 160ms var(--ease2);
+}
+
+.component-close:hover{
+  background: rgba(255, 0, 0, 0.48);
+}
+.component-close:active{ transform: translateY(0); }
+
+.component-close svg{
+  width: 28px;
+  height: 28px;
+  opacity: .95;
+}
+
+.component-sidebar-body{
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+
+  padding: 14px var(--sb-pad) 18px;
+}
+
+#componentList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.component-sidebar-footer{
+  position: sticky;
+  bottom: 0;
+  z-index: 6;
+
+  padding: 12px var(--sb-pad) calc(14px + var(--safe-bottom));
+}
+
+.sidebar-footer-actions{
+  display: grid;
+  gap: 10px;
+}
+
+.sidebar-action{
+  height: var(--hit);
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,.10);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  color: rgba(255,255,255,.92);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 13px;
+  font-weight: 820;
+  letter-spacing: .02em;
+
+  cursor: pointer;
+  transition: transform 140ms var(--ease2), background 160ms var(--ease2), border-color 160ms var(--ease2), box-shadow 160ms var(--ease2);
+}
+
+.sidebar-action:hover{
+  background: linear-gradient(90deg, #0d96a5, #0d96a5);
+  border-color: rgba(56,189,248,.24);
+  box-shadow: 0 14px 30px rgba(0,0,0,.26);
+}
+.sidebar-action:active{ transform: translateY(0); }
+
+.sidebar-footer-actions--icons{
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  justify-content: center;
+  gap: 12px;
+}
+
+.sidebar-action--icon{
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  border-radius: 14px;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  display: inline-grid;
+  place-items: center;
+}
+
+.sidebar-action--emergency{
+  color: #ff4b4b;
+}
+
+.sidebar-action--help{
+  color: #ffffff;
+}
+
+.sidebar-action--logout{
+  color: #ffffff;
+}
+
+.sidebar-action--logout svg{
+  width: 22px;
+  height: 22px;
+}

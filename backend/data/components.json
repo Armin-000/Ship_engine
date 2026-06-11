@@ -1,0 +1,2429 @@
+{
+  "GLOBAL": {
+    "title": "Global Engine Room Model",
+    "description": "Complete 3D engine room assembly with all major systems visible.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "1 Structure": {
+    "title": "Structure",
+    "description": "Main structural assembly of the vessel engine room, including floor, supports and hull-related elements.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "11 Floor": {
+    "title": "Floor",
+    "description": "Engine room floor structure used as the main base for equipment, access and support.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "111 Main Deck": {
+    "title": "Main Deck",
+    "description": "Primary deck surface in the engine room structure.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "113 Engine Room Base": {
+    "title": "Engine Room Base",
+    "description": "Base support structure of the engine room area.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "114 Base Supports": {
+    "title": "Base Supports",
+    "description": "Support elements used to stabilize and carry structural loads.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "12 Underwater Part of the Ship's Hull": {
+    "title": "Underwater Part of the Ship's Hull",
+    "description": "Lower hull section positioned below the waterline.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "3 Plate heat exchanger": {
+    "title": "Plate Heat Exchanger",
+    "description": "Heat exchanger system used for transferring heat between fluid circuits.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-09T22:22:29.495Z"
+  },
+  "5 Main engine No1": {
+    "title": "Main Engine No1",
+    "description": "Main propulsion engine system of the vessel.",
+    "documents": {
+      "documentation": "/docs/C32_1000_HP_SPECIFICATIONS.pdf",
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "54 Fuel oil filter No1": {
+    "title": "Fuel Oil Filter No1",
+    "description": "Fuel oil filter assembly used to remove impurities before fuel enters the engine system.",
+    "documents": {
+      "documentation": "/docs/C32_1000_HP_SPECIFICATIONS.pdf",
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "51 Main Engine No1": {
+    "title": "test1",
+    "description": "Main engine assembly with connected subcomponents.",
+    "documents": {
+      "documentation": "/docs/C32_1000_HP_SPECIFICATIONS.pdf",
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:24:38.688Z"
+  },
+  "52 Gearbox": {
+    "title": "Gearbox",
+    "description": "Gearbox assembly responsible for transmitting and adapting engine power to the propulsion system.",
+    "documents": {
+      "documentation": "/docs/C32_1000_HP_SPECIFICATIONS.pdf",
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "53 Filters": {
+    "title": "Filters",
+    "description": "Filter group used for fluid cleaning and system protection.",
+    "documents": {
+      "documentation": "/docs/C32_1000_HP_SPECIFICATIONS.pdf",
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "55 Main engine No1 base": {
+    "title": "Main Engine No1 Base",
+    "description": "Base structure supporting the main engine assembly.",
+    "documents": {
+      "documentation": "/docs/C32_1000_HP_SPECIFICATIONS.pdf",
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "Object 5 5": {
+    "title": "Object 5 5",
+    "description": "Individual structural component. Description can be edited from the info panel.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    }
+  },
+  "uuid:ff7ceebb-56e1-4d02-a0a4-39d7464f8db0": {
+    "title": "test",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:28:48.642Z"
+  },
+  "uuid:86c22174-f988-4da9-ab61-c5cbd0fbd6c8": {
+    "title": "Fuel oil filter",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:29:33.549Z"
+  },
+  "uuid:c317eb03-2e79-411b-9573-86a48cb99e3f": {
+    "title": "test",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:35:54.738Z"
+  },
+  "uuid:3043be6f-ad88-4231-8d5c-ccfa8418018b": {
+    "title": "test",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:38:43.539Z"
+  },
+  "uuid:0582a486-e109-44fa-b386-4d921411f435": {
+    "title": "test",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:40:59.880Z"
+  },
+  "uuid:be746fb1-bd52-4619-819f-d389cc7ec71a": {
+    "title": "test",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:44:59.760Z"
+  },
+  "uuid:0aa19dfa-230f-4bc4-a0fe-55fa259fb398": {
+    "title": "test",
+    "description": "test",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-02T19:48:37.183Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662": {
+    "title": "Diesel engine",
+    "description": "The primary V12 internal combustion engine block configured to deliver high-torque mechanical power for marine propulsion or power generation.",
+    "documents": {
+      "documentation": "/docs/components/1780434566028-c32_1000_hp_specifications.pdf",
+      "schematics": "/docs/components/1780485543554-c32_1000_hp_specifications.pdf",
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-09T22:23:03.328Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_1": {
+    "title": "Engine auxiliary systems",
+    "description": "The complete external support assembly integrating air intake filtration, turbochargers, exhaust routing, and heat exchangers.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:37:25.369Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_2": {
+    "title": "Flange cover plate",
+    "description": "A triangular triangular-flange sealing plate secured by three bolts, used to cover access ports or structural fluid housing on the engine.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:37:57.376Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_3": {
+    "title": "Mounting hardware brackets",
+    "description": "A small assembly of structural support brackets and hexagonal spacers used to align and secure peripheral engine components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:38:39.299Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_4": {
+    "title": "Anti-vibration mounts",
+    "description": "A pair of heavy-duty structural dampening feet equipped with securing studs and mounting baseplates to isolate engine vibrations.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:39:14.964Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/111_Main_Deck": {
+    "title": "Main deck plating",
+    "description": "Represents the primary structural plating of the main deck level, serving as the boundary between the upper structures and the lower compartments.",
+    "documents": {
+      "documentation": "/docs/components/1780495918363-c32_1000_hp_specifications.pdf",
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T14:12:26.271Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/114_Base_Supports": {
+    "title": "Structural base supports",
+    "description": "Heavy-duty structural elements designed to distribute loads and provide rigid support for the deck plating and machinery foundations.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T08:59:19.060Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/113_Engine_Room_Base/Object_5": {
+    "title": "Machinery foundation",
+    "description": "Heavy structural bedplate designed to support main machinery, ensuring rigid alignment and effective vibration damping across the hull.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:00:19.254Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/113_Engine_Room_Base/Object_5_1": {
+    "title": "Foundation base plate",
+    "description": "The structural bottom plate that provides the primary surface for mounting machinery elements.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:01:43.981Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/113_Engine_Room_Base/Object_5_2": {
+    "title": "Longitudinal foundation girder",
+    "description": "Longitudinal structural beam running fore and aft to distribute weight and resist bending stresses.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:02:05.781Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/113_Engine_Room_Base/Object_5_3": {
+    "title": "Transverse foundation girder",
+    "description": "Transverse bracing element providing lateral stiffness and structural integrity to the machinery bed.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:02:34.043Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/113_Engine_Room_Base/Object_5_4": {
+    "title": "Foundation stiffener panel",
+    "description": "Internal reinforcement plate designed to eliminate local vibrations and buckling under heavy loads.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:03:35.883Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/113_Engine_Room_Base/Object_5_5": {
+    "title": "Mounting bed component",
+    "description": "Anchoring and support structure section optimized for securing heavy engine room machinery.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:03:59.679Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/112_Ship's_Hull/Plane": {
+    "title": "Hull plating",
+    "description": "The outermost structural shell of the ship, providing watertight integrity and defining the vessel's hydrodynamic shape.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:06:32.112Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/112_Ship's_Hull/Plane_1": {
+    "title": "Side shell plating",
+    "description": "The vertical or near-vertical sections of the hull plating that form the sides of the vessel's structure.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:06:49.468Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/112_Ship's_Hull/Plane_2": {
+    "title": "Bilge plating section",
+    "description": "The curved transition zone of the hull that connects the vertical side plating to the flat bottom structure.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:07:04.592Z"
+  },
+  "path:Scene/FULL/1_Structure/11_Floor/112_Ship's_Hull/Plane_3": {
+    "title": "Bottom shell plating",
+    "description": "The lowermost horizontal plates of the hull structure, forming the flat bottom section of the ship.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:07:18.505Z"
+  },
+  "path:Scene/FULL/1_Structure/12_Underwater_Part_of_the_Ship's_Hull/121_Ship's_Ribs/271_UNDERWATER_PART_OF_THE_SHIP'S_HULL_1": {
+    "title": "Transverse hull frames",
+    "description": "The vertical ribs of the ship's structure that provide lateral stiffness to the side shell plating and resist external water pressure.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:09:19.925Z"
+  },
+  "path:Scene/FULL/1_Structure/12_Underwater_Part_of_the_Ship's_Hull/121_Ship's_Ribs/271_UNDERWATER_PART_OF_THE_SHIP'S_HULL": {
+    "title": "Bottom transverse floors",
+    "description": "Deep vertical plates extending across the bottom of the ship to support the lower inner structure and strengthen the double bottom.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:09:44.239Z"
+  },
+  "path:Scene/FULL/1_Structure/12_Underwater_Part_of_the_Ship's_Hull/121_Ship's_Ribs/271_UNDERWATER_PART_OF_THE_SHIP'S_HULL_2": {
+    "title": "Longitudinal bottom girders",
+    "description": "Continuous longitudinal structural plates running along the bottom grid to provide longitudinal bending resistance.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:10:02.923Z"
+  },
+  "path:Scene/FULL/1_Structure/12_Underwater_Part_of_the_Ship's_Hull/122_Manholes/1232_Manhole": {
+    "title": "Primary access manhole",
+    "description": "The main watertight service hatch used for entry and ventilation of the lower compartment.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:11:21.225Z"
+  },
+  "path:Scene/FULL/1_Structure/12_Underwater_Part_of_the_Ship's_Hull/122_Manholes/1221_Manhole": {
+    "title": "Secondary access manhole",
+    "description": "An auxiliary watertight inspection hatch providing an alternative entry or inspection point for the tank layout.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:11:39.456Z"
+  },
+  "path:Scene/FULL/2_Exhaust_system/22_Port_Generator_Exhaust_system/Object_37": {
+    "title": "Port generator exhaust system",
+    "description": "The structural piping and insulation network designed to safely guide and discharge exhaust gases from the port side auxiliary generator.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:12:31.006Z"
+  },
+  "path:Scene/FULL/2_Exhaust_system/22_Port_Generator_Exhaust_system/Object_37_1": {
+    "title": "Generator exhaust piping",
+    "description": "High-temperature resistant ducting section that routes combustion gases from the engine manifold toward the main silencer.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:12:47.200Z"
+  },
+  "path:Scene/FULL/2_Exhaust_system/21_Ventilation_system/Object_37001": {
+    "title": "Room ventilation",
+    "description": "The air supply and extraction network designed to maintain optimal ambient temperatures, manage humidity, and provide fresh air to the machinery compartments.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:14:06.531Z"
+  },
+  "path:Scene/FULL/2_Exhaust_system/21_Ventilation_system/Object_37001_1": {
+    "title": "Ventilation duct",
+    "description": "A structural air channel section responsible for routing and distributing airflow efficiently throughout the interior space.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:14:25.951Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/32_Nails": {
+    "title": "Tightening bolts",
+    "description": "Threaded tie rods engineered to compress the plate pack together, preventing internal leaks and maintaining pressure sealing.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:17:03.578Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/33_Nuts": {
+    "title": "Locking nuts",
+    "description": "Heavy-duty hexagonal fasteners fitted onto the tie rods to secure and maintain the correct compression torque on the frame.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:17:16.936Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/31_Centar": {
+    "title": "Plate pack",
+    "description": "A series of corrugated metal plates arranged together to form channels for fluids to transfer heat without mixing.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:17:33.288Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/34_Site_1/Object_20": {
+    "title": "Frame plate",
+    "description": "The heavy stationary steel front panel that supports the piping connections and withstands internal clamping forces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:17:54.065Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/34_Site_1/Object_20_1": {
+    "title": "Frame plate 2",
+    "description": "The heavy stationary steel front panel that supports the piping connections and withstands internal clamping forces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:18:08.438Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/35_Site_2/Object_20004": {
+    "title": "Pressure plate",
+    "description": "The movable steel rear panel adjusted along the carrying bar to apply even compression across the entire plate pack.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:18:24.584Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/35_Site_2/Object_20004_1": {
+    "title": "Pressure plate",
+    "description": "The movable steel rear panel adjusted along the carrying bar to apply even compression across the entire plate pack.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:18:33.088Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/Supporter/Object_20005": {
+    "title": "Support foot",
+    "description": "A rigid mounting bracket that secures the heat exchanger unit to the engine room floor framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:18:47.081Z"
+  },
+  "path:Scene/FULL/3_Plate_heat_exchanger/Supporter/Object_20005_1": {
+    "title": "Support foot 2",
+    "description": "A rigid mounting bracket that secures the heat exchanger unit to the engine room floor framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:19:02.183Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/41_Port_Generator_base": {
+    "title": "Generator skid",
+    "description": "The heavy-duty steel base frame that holds both the diesel engine and the alternator aligned, isolating vibrations from the ship's hull.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:21:16.485Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/42_Exhaust_insulation": {
+    "title": "Exhaust insulation",
+    "description": "Thermal blankets or protective lagging designed to jacket high-temperature exhaust components, preventing heat dissipation into the room.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:22:02.013Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3": {
+    "title": "Generator nuts",
+    "description": "Cast nuts that serve to hold the generator in place and absorb vibrations.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:26:46.575Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_1": {
+    "title": "plug from the generator",
+    "description": "A plug that is made of metal and is marked in red",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:24:32.855Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_2": {
+    "title": "Engine auxiliary systems",
+    "description": "The collection of external support loops, including fuel lines, filtration units, and fluid manifolds attached to the generator engine.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:31:06.791Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_3": {
+    "title": "Oil dipstick",
+    "description": "A manual gauge tool used to check the lube oil level and fluid condition inside the engine oil pan.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:31:36.305Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_4": {
+    "title": "Generator unit",
+    "description": "The combined auxiliary diesel engine and alternator assembly that generates electrical power for the vessel.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:32:23.525Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_5": {
+    "title": "Support fittings",
+    "description": "A collection of heavy-duty brackets, clamps, and pipe fittings configured for hardware installation across the generator.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:33:03.260Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_6": {
+    "title": "Anti-vibration mount",
+    "description": "A heavy-duty structural bushing designed to absorb mechanical dampening forces and reduce vibration transfer across engine components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:33:41.067Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_7": {
+    "title": "Mounting nuts",
+    "description": "A collection of heavy-duty hexagonal fasteners used to securely clamp and lock various auxiliary components onto the engine block.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:34:14.916Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_8": {
+    "title": "Power alternator",
+    "description": "The electrical machine coupled to the engine that converts mechanical rotation into electrical energy for the ship's grid.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:34:51.859Z"
+  },
+  "path:Scene/FULL/4_Port_Generator/43_Port_Generator_Main/665001001_Engine_3_9": {
+    "title": "Alternator terminal box",
+    "description": "The electrical enclosure housing the main output terminals and cable connections for the power alternator.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:35:36.666Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/54_Fuel_oil_filter_No1": {
+    "title": "Fuel filters",
+    "description": "A dual-stage filtration unit designed to remove solid contaminants and water from the fuel supply line before it reaches the fuel injectors.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:36:18.089Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_5": {
+    "title": "Lube oil filters",
+    "description": "A multi-canister fluid filtration assembly equipped with bypass valves to continuously clean and distribute lubricating oil through the engine.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:39:47.188Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_7": {
+    "title": "Valve handle lever",
+    "description": "A heavy-duty manual control lever designed to actuate the fluid bypass or isolation valve on the filter assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:40:54.826Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_8": {
+    "title": "Turbocharger assembly",
+    "description": "A dual turbocharger configuration and associated mounting hardware designed to force compressed air into the engine cylinders for combustion.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:41:29.125Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_9": {
+    "title": "Protective port caps",
+    "description": "A pair of small protective caps designed to seal auxiliary ports, test points, or fluid openings from environmental contamination.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:42:14.716Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_10": {
+    "title": "Vibration damping pads",
+    "description": "A pair of molded structural isolation pads designed to reduce mechanical vibration and noise transmission between engine components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:42:40.486Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_11": {
+    "title": "Engine flange gaskets",
+    "description": "A pair of flat sealing gaskets designed to fit between piping flanges to prevent fluid or gas leaks under pressure.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:43:12.630Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/51_Main_Engine_No1/601110_Engine_662_6": {
+    "title": "Missing geometry artifact",
+    "description": "A temporary 3D rendering anomaly where the specific engine component geometry is missing from the source CAD file mesh.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:45:08.148Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907": {
+    "title": "Marine generator unit",
+    "description": "An auxiliary electrical generation component coupled to the propulsion system layout to convert mechanical energy into electrical power.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:55:24.044Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_1": {
+    "title": "Protective port cap",
+    "description": "A small individual protective cap configured to seal auxiliary diagnostic ports or fluid openings from contamination.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:55:50.642Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_2": {
+    "title": "Vibration damping pad",
+    "description": "A molded isolation pad configured to reduce mechanical vibration and noise transmission on the stern engine framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:56:20.004Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_3": {
+    "title": "Spacer bushing pack",
+    "description": "A small assembly consisting of cylindrical spacer bushings and matching fastening washers designed for structural alignment on the stern engine framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:56:55.664Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_4": {
+    "title": "Conduit connector fittings",
+    "description": "A small group of rigid elbow and straight connector sleeves designed to route electrical cabling protective conduits or small auxiliary fluid lines.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:57:30.808Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_5": {
+    "title": "Angled pipe fitting",
+    "description": "A rigid $90^\\circ$ elbow coupling assembly fitted with a hexagonal union nut, designed for secure fluid line redirection within tight engine spaces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:58:03.869Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_6": {
+    "title": "Housing fastener kit",
+    "description": "A comprehensive set of heavy-duty mounting bolts and nuts distributed along the component flange to secure structural casing connections.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T09:58:46.617Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_7": {
+    "title": "Engine mounting hardware",
+    "description": "A collection of heavy-duty structural mounting brackets, T-fittings, and flange fasteners configured to secure and support the rear propulsion framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:01:10.217Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_8": {
+    "title": "Fluid line fittings",
+    "description": "A collection of auxiliary hose lines, threaded adapter unions, T-junctions, and monitoring hardware designed for the stern propulsion system plumbing.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:04:13.652Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_9": {
+    "title": "Pipeline clamp assembly",
+    "description": "A mechanical mounting clamp integrated with rigid fluid lines and structural support bars designed for secure routing on the stern section.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:05:19.944Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_10": {
+    "title": "Auxiliary pump line",
+    "description": "A small mechanical pump unit integrated with an extended rigid fluid distribution line configured for the stern engine framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:05:54.531Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_11": {
+    "title": "Drive housing assembly",
+    "description": "A comprehensive structural casing assembly incorporating the main rear enclosure, secondary mounting rails, and auxiliary fluid components on the stern engine framework.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:06:29.905Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_12": {
+    "title": "Protective plug kit",
+    "description": "A small set of individual rubberized caps and sealing plugs configured to protect auxiliary diagnostic ports or structural access points from contamination.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:10:01.660Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/52_Gearbox/601100_PROPULSION_ENGINE_–_STERN_Port_side_907_13": {
+    "title": "Sensor line assembly",
+    "description": "A secondary hardware pairing consisting of a flexible routing line and a molded isolation pad configured for the stern framework layout.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:10:42.216Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/55_Main_engine_No1_base/601100_PROPULSION_ENGINE_–_STERN_Port_side_1015": {
+    "title": "Engine foundation bedplate",
+    "description": "A pair of heavy-duty structural steel girders equipped with vertical reinforcing ribs, designed to form the rigid base foundation for the stern propulsion machinery.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:11:14.518Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/55_Main_engine_No1_base/601100_PROPULSION_ENGINE_–_STERN_Port_side_1015_1": {
+    "title": "Structural mounting plate",
+    "description": "An individual heavy-gauge steel reinforcement plate with a machined notch, designed for interlocking alignment within the engine foundation bedplate assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:12:13.808Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/53_Filters/531_Filter_1": {
+    "title": "Filter adapter sleeve",
+    "description": "A small cylindrical threaded sleeve configured to connect fluid lines or secure structural interfaces within the primary filtration assembly layout.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:12:46.482Z"
+  },
+  "path:Scene/FULL/5_Main_engine_No1/53_Filters/532_Filter_2": {
+    "title": "Filter adapter sleeve",
+    "description": "A small cylindrical threaded sleeve configured to connect fluid lines or secure structural interfaces within the secondary filtration assembly layout.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:13:14.819Z"
+  },
+  "path:Scene/FULL/6_Transmition/63_Azipod_foundation/601100_PROPULSION_ENGINE_–_STERN_Port_side_102": {
+    "title": "Transmission mounting pad",
+    "description": "A heavy-duty oval-shaped structural spacer block equipped with top alignment holes, designed to support and position the transmission casing.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-09T15:35:53.303Z"
+  },
+  "path:Scene/FULL/6_Transmition/63_Azipod_foundation/601100_PROPULSION_ENGINE_–_STERN_Port_side_102_1": {
+    "title": "Transmission fastener kit",
+    "description": "An oval array of high-tensile mounting bolts and fasteners configured to provide uniform clamping pressure across the transmission hardware interface.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:16:30.532Z"
+  },
+  "path:Scene/FULL/6_Transmition/63_Azipod_foundation/601100_PROPULSION_ENGINE_–_STERN_Port_side_102_2": {
+    "title": "Missing model geometry",
+    "description": "No 3D render data available. This metadata slot exists in the system layout, but the visual geometry for this transmission component is missing or failed to load.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:17:10.301Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823": {
+    "title": "Transmission sensor kit",
+    "description": "A precise hardware compilation featuring an auxiliary instrumentation sensor, alignment pins, and secondary sealing fasteners for the drivetrain housing.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:18:03.232Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_1": {
+    "title": "Transmission control valve",
+    "description": "A heavy-duty hydraulic control valve unit fitted with an integrated actuator cylinder designed to regulate oil fluid routing within the transmission system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:23:17.176Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_2": {
+    "title": "Valve protective cap",
+    "description": "A small hardware pairing featuring a cylindrical protective cap and an alignment pin configured for the auxiliary transmission valve assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:23:47.751Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_3": {
+    "title": "Valve sealing kit",
+    "description": "A small secondary hardware grouping comprising a flat circular sealing disk and a miniature positioning plate configured for the transmission valve assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:24:28.575Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_4": {
+    "title": "Control rod guide",
+    "description": "A vertical structural rod fitted with an integrated rectangular channel profile, designed to route control cables or guide mechanical linkage near the transmission manifold.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:25:20.559Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_5": {
+    "title": "Valve fastener kit",
+    "description": "An elliptic array of individual hexagonal mounting bolts configured to distribute uniform clamping pressure across the transmission valve housing flange.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:31:11.868Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_6": {
+    "title": "Valve sealing gasket",
+    "description": "A molded elastomeric sealing ring configured to fit the transmission valve flange interface, ensuring a leak-proof barrier against hydraulic fluid loss.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:31:44.539Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_7": {
+    "title": "Valve plug kit",
+    "description": "\"A hardware assembly featuring an elliptical layout of hex blanking caps and a central diagnostic port fitting configured for the transmission valve block.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:32:14.431Z"
+  },
+  "path:Scene/FULL/6_Transmition/62_Transmition_Plate/601100_PROPULSION_ENGINE_–_STERN_Port_side_823_8": {
+    "title": "Valve O-ring seal",
+    "description": "A precise elastomeric circular seal designed to provide a leak-proof interface for auxiliary port connections on the transmission valve block.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:33:00.579Z"
+  },
+  "path:Scene/FULL/6_Transmition/61_Full_Shaft_/612_Shaft": {
+    "title": "Transmission drive shaft",
+    "description": "A precision-machined rotating shaft assembly designed to transmit torque and maintain axial alignment within the primary drivetrain system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:33:57.463Z"
+  },
+  "path:Scene/FULL/6_Transmition/61_Full_Shaft_/611_Shaft_Covers/601100_PROPULSION_ENGINE_–_STERN_Port_side_282": {
+    "title": "Structural mounting rails",
+    "description": "A pair of parallel metal rails supported by vertical columns, designed to provide a rigid foundation for positioning heavy machinery components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:34:23.512Z"
+  },
+  "path:Scene/FULL/6_Transmition/61_Full_Shaft_/611_Shaft_Covers/601100_PROPULSION_ENGINE_–_STERN_Port_side_282_1": {
+    "title": "Access panel hinges",
+    "description": "A series of mechanical hinge assemblies configured for mounting service access covers or protective plating along the drivetrain structural rails.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:34:54.985Z"
+  },
+  "path:Scene/FULL/6_Transmition/61_Full_Shaft_/611_Shaft_Covers/601100_PROPULSION_ENGINE_–_STERN_Port_side_282_2": {
+    "title": "Locking retaining nut",
+    "description": "A precision-machined yellow locking nut featuring external lugs, designed to secure internal drivetrain components and maintain axial position under load.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:35:27.471Z"
+  },
+  "path:Scene/FULL/6_Transmition/61_Full_Shaft_/611_Shaft_Covers/601100_PROPULSION_ENGINE_–_STERN_Port_side_282_3": {
+    "title": "Protective curved guard",
+    "description": "A lightweight curved protective shell designed to shield exposed cabling or small mechanical components from external wear and impact.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:35:54.565Z"
+  },
+  "path:Scene/FULL/6_Transmition/61_Full_Shaft_/611_Shaft_Covers/601100_PROPULSION_ENGINE_–_STERN_Port_side_282_4": {
+    "title": "Panel mounting bracket",
+    "description": "A heavy-duty mounting bracket featuring a precision-drilled fastener hole, designed for secure installation of protective panels on the engine support rails.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:36:31.246Z"
+  },
+  "path:Scene/FULL/9_Propeller/93_Propeller": {
+    "title": "Thrust propeller assembly",
+    "description": "A high-performance blade assembly precision-balanced for optimal water displacement, thrust generation, and propulsion efficiency in marine environments.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:40:06.462Z"
+  },
+  "path:Scene/FULL/9_Propeller/92_Motor_Head": {
+    "title": "Propulsion motor housing",
+    "description": "The primary submersible motor casing engineered for hydrodynamic efficiency, housing the internal electric drive components and cooling passages.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:41:14.446Z"
+  },
+  "path:Scene/FULL/9_Propeller/91_Motor_connector": {
+    "title": "Motor mounting flange",
+    "description": "A heavy-duty structural interface designed to securely anchor the propulsion motor housing to the vessel's stern transom and main support rails.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:40:58.929Z"
+  },
+  "path:Scene/FULL/13_Duplex_Oil_strainer": {
+    "title": "Duplex oil filtration unit",
+    "description": "A redundant filtration system featuring dual canisters, designed for the continuous removal of contaminants from the engine lubricating oil circuit.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:42:25.419Z"
+  },
+  "path:Scene/FULL/12_Service_Air_Reciever/Object_104": {
+    "title": "CO2 fire suppression",
+    "description": "A high-pressure CO2 fire extinguishing manifold assembly, engineered for rapid total-flooding protection of machinery spaces in the event of fire.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:43:11.060Z"
+  },
+  "path:Scene/FULL/12_Service_Air_Reciever/Object_104_1": {
+    "title": "Service air tank",
+    "description": "A high-capacity pressure vessel engineered to store and stabilize compressed air, ensuring consistent pressure for shipboard pneumatic equipment and auxiliary service lines.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:43:36.408Z"
+  },
+  "path:Scene/FULL/12_Service_Air_Reciever/Object_104_2": {
+    "title": "Plate heat exchanger",
+    "description": "A high-efficiency thermal transfer unit featuring stacked corrugated plates, designed for rapid heat exchange between distinct fluid circuits within the vessel's cooling system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:44:10.266Z"
+  },
+  "path:Scene/FULL/11_Lube_oil_tank/Object_1": {
+    "title": "Lubrication oil tank",
+    "description": "A dedicated storage reservoir engineered to maintain a constant supply of lubricating oil, ensuring optimal cooling and wear reduction for primary propulsion engine bearings and moving parts.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:45:03.650Z"
+  },
+  "path:Scene/FULL/11_Lube_oil_tank/Object_1_1": {
+    "title": "Port generator set",
+    "description": "A marine-grade auxiliary generator assembly designed to provide reliable electrical power for vessel operations, consisting of a primary drive engine coupled to an electrical power generator unit.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:45:33.086Z"
+  },
+  "path:Scene/FULL/11_Lube_oil_tank/Object_1_2": {
+    "title": "Inspection hatch nuts",
+    "description": "A series of heavy-duty securing nuts designed to fasten and provide a compression seal for the lube oil tank inspection hatch, ensuring the integrity and leak-proof state of the lubrication system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T10:46:34.412Z"
+  },
+  "path:Scene/FULL/10_Fire_System/107_Phone": {
+    "title": "Marine communication phone",
+    "description": "A ruggedized, weather-resistant industrial handset engineered for reliable internal voice communication within high-noise machinery spaces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:00:38.155Z"
+  },
+  "path:Scene/FULL/10_Fire_System/106_Alarm_Holder/Object_16001": {
+    "title": "Alarm mount",
+    "description": "A specialized structural support fixture designed for the secure installation and positioning of alarm signaling devices within the machinery space.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:02:39.827Z"
+  },
+  "path:Scene/FULL/10_Fire_System/106_Alarm_Holder/Object_16001_1": {
+    "title": "Main frame",
+    "description": "A reinforced structural framework designed to support and align multiple alarm signaling components within the vessel's machinery space.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:02:33.512Z"
+  },
+  "path:Scene/FULL/10_Fire_System/106_Alarm_Holder/Object_16001_2": {
+    "title": "Support extension",
+    "description": "A structural reinforcement member designed to extend and secure the alarm mounting framework within the vessel's machinery space.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:02:26.391Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1013_Alarm_Set_Device": {
+    "title": "Alarm control unit",
+    "description": "Main interface module for managing and triggering alarm systems.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:03:16.101Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1016_Alarm_System_Control_Box": {
+    "title": "Alarm control box",
+    "description": "Primary housing unit for alarm system electronics and logic controllers.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:03:40.944Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1014_Alarm_Switchboard_1/Object_70": {
+    "title": "Junction box",
+    "description": "Protective housing for electrical connections and wiring terminations.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:04:07.087Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1014_Alarm_Switchboard_1/Object_70_1": {
+    "title": "Cable glands",
+    "description": "Sealing components for securing and protecting electrical cable entries into the junction box.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:04:34.046Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1015_Alarm_Switchboard_2/Object_57": {
+    "title": "Electrical cabinet",
+    "description": "Enclosure for housing and protecting critical electrical distribution and control components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:05:01.815Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1015_Alarm_Switchboard_2/Object_57_1": {
+    "title": "Cabinet door handle",
+    "description": "Ergonomic handle assembly for opening and securing the electrical cabinet door.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:05:26.109Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1015_Alarm_Switchboard_2/Object_57_2": {
+    "title": "Cabinet ventilation kit",
+    "description": "Integrated set of vents and mounting plates designed to provide airflow and passive cooling for electrical cabinet components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:05:51.981Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1011_Alarm_Speakers/10111_Alarm_Speaker": {
+    "title": "Alarm horn speaker",
+    "description": "High-output acoustic signaling device for industrial alarm and notification systems.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:06:28.607Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1011_Alarm_Speakers/10112_Alarm_Speaker_2": {
+    "title": "Alarm horn speaker 2",
+    "description": "High-output acoustic signaling device for industrial alarm and notification systems.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:06:51.945Z"
+  },
+  "path:Scene/FULL/10_Fire_System/101_Alarm_System/1011_Alarm_Speakers/10113_Alarm_Speaker_3": {
+    "title": "Alarm horn speaker 3",
+    "description": "High-output acoustic signaling device for industrial alarm and notification systems.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:07:02.550Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1031_Fire_detectors_in_engine_room": {
+    "title": "Fire detector",
+    "description": "Ceiling-mounted sensor for early detection of fire and smoke in machinery spaces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:07:34.172Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1032_Fire_detectors_in_engine_room_2": {
+    "title": "Fire detector 2",
+    "description": "Ceiling-mounted sensor for early detection of fire and smoke in machinery spaces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:07:48.085Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1033_Emergency_Light": {
+    "title": "Emergency beacon",
+    "description": "Visual signaling device used to indicate emergency status within the machinery space.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:08:10.934Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1035_Alarm_Signal_Light": {
+    "title": "Signal tower",
+    "description": "Vertical status indicator for monitoring system operations and alarm conditions.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:08:39.281Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1034_Fire_Alarm_Lights/1041_Fire_alarm": {
+    "title": "Fire alarm status panel",
+    "description": "Centralized visual indicator displaying the operational or alert status of multiple fire alarm zones.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:09:37.770Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1034_Fire_Alarm_Lights/1042_Fire_alarm": {
+    "title": "Fire alarm status panel",
+    "description": "Centralized visual indicator displaying the operational or alert status of multiple fire alarm zones.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:09:52.577Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1034_Fire_Alarm_Lights/1043_Fire_alarm": {
+    "title": "Fire alarm status panel",
+    "description": "Centralized visual indicator displaying the operational or alert status of multiple fire alarm zones.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:10:04.546Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1034_Fire_Alarm_Lights/1044_Fire_alarm": {
+    "title": "Fire alarm status panel",
+    "description": "Centralized visual indicator displaying the operational or alert status of multiple fire alarm zones.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:10:16.835Z"
+  },
+  "path:Scene/FULL/10_Fire_System/103_Fire_Detectors/1034_Fire_Alarm_Lights/1045_Fire_alarm": {
+    "title": "Fire alarm status panel",
+    "description": "Centralized visual indicator displaying the operational or alert status of multiple fire alarm zones.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:10:27.914Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1021_Main_Switchboard_1/Solid6": {
+    "title": "Control push-buttons",
+    "description": "Set of tactile manual input buttons for operating functions on the control panel.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:11:22.268Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1021_Main_Switchboard_1/Solid6_1": {
+    "title": "Control enclosure",
+    "description": "Protective housing unit designed for securing sensitive electrical and control components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:11:46.553Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1021_Main_Switchboard_1/Solid6_2": {
+    "title": "Identification labels",
+    "description": "Set of label plates for indicating functions or system status on the control panel.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:12:14.910Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1021_Main_Switchboard_1/Solid6_3": {
+    "title": "Cabinet lock",
+    "description": "Key-operated locking mechanism to secure the enclosure door and prevent unauthorized access.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:12:41.661Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1022_Main_Switchboard_2/Solid6_20_3": {
+    "title": "Cabinet lock",
+    "description": "Key-operated locking mechanism to secure the enclosure door and prevent unauthorized access.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:13:01.064Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1022_Main_Switchboard_2/Solid6_20_2": {
+    "title": "Identification labels",
+    "description": "Set of label plates for indicating functions or system status on the control panel.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:13:13.984Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1022_Main_Switchboard_2/Solid6_20_1": {
+    "title": "Control enclosure",
+    "description": "Protective housing unit designed for securing sensitive electrical and control components.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:13:23.187Z"
+  },
+  "path:Scene/FULL/10_Fire_System/102_Switchboards/1022_Main_Switchboard_2/Solid6_20": {
+    "title": "Control push-buttons",
+    "description": "Set of tactile manual input buttons for operating functions on the control panel.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-03T11:13:37.522Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS": {
+    "title": "Fuel transfer pipe",
+    "description": "Primary pipeline used for transporting fuel oil between different sections of the fuel system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:27:12.714Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_1": {
+    "title": "Isolation valve",
+    "description": "Manual shut-off valve used to control or isolate fuel flow for operation and maintenance purposes.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:27:28.727Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_2": {
+    "title": "Fuel distribution pipe",
+    "description": "Pipe section responsible for distributing fuel throughout the machinery fuel network.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:27:41.876Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_3": {
+    "title": "Pipe connection nut",
+    "description": "Threaded fastening element used to securely connect pipe sections and fittings.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:27:54.431Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_4": {
+    "title": "Blue valve handle",
+    "description": "Blue-coded manual valve handle used for operating designated fluid control valves.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:28:08.637Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_5": {
+    "title": "Red valve handle",
+    "description": "Red-coded manual valve handle used for controlling safety-critical or fuel-related valves.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:28:21.894Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_6": {
+    "title": "Valve assembly",
+    "description": "Complete valve mechanism used to regulate, direct, or isolate fluid flow within the piping system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:28:34.484Z"
+  },
+  "path:Scene/FULL/7_Pipes/73_Fuel_oil_system/07_SYSTEMS_FOR_MACHINERY_MAIN_COMPONENTS_7": {
+    "title": "Fuel supply pipe",
+    "description": "Fuel pipeline section responsible for delivering fuel to engines and associated equipment.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:28:48.292Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075": {
+    "title": "Pipe fasteners",
+    "description": "Assembly of bolts, nuts, and fastening components used to secure pipe sections and supporting structures.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:31:44.106Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_1": {
+    "title": "Fresh water pipe section A",
+    "description": "Pipe segment used for transporting fresh water within the vessel's freshwater distribution system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:31:55.010Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_2": {
+    "title": "Fresh water pipe section B",
+    "description": "Freshwater pipeline component forming part of the vessel's internal water circulation network.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:32:07.349Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_3": {
+    "title": "Fresh water pipe section C",
+    "description": "Structural pipe section designed to ensure continuous freshwater flow between connected systems.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:32:18.589Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_4": {
+    "title": "Pipe coupling adapter",
+    "description": "Specialized pipe connection component used to join or adapt freshwater pipe sections within the system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:32:32.184Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_5": {
+    "title": "Pipe fasteners set",
+    "description": "Collection of fastening hardware used to maintain secure and reliable pipe connections.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:32:43.628Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_6": {
+    "title": "Sealing gaskets",
+    "description": "Specialized sealing elements designed to prevent leaks and maintain system pressure at pipe joints and connections.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:32:55.015Z"
+  },
+  "path:Scene/FULL/7_Pipes/71_Fresh_Water_System_Pipes/Solid1_2075_7": {
+    "title": "Coupling extension",
+    "description": "Extension component used to increase the connection length of the pipe coupling assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:33:05.993Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621": {
+    "title": "Cooling water pipe",
+    "description": "Pipe section responsible for transporting seawater cooling flow to and from the freshwater evaporator system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:36:01.777Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_1": {
+    "title": "Pipe fasteners",
+    "description": "Assembly of bolts, nuts, and fastening components securing pipe connections and equipment interfaces.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:36:13.896Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_2": {
+    "title": "Sealing gaskets",
+    "description": "Sealing elements designed to prevent leakage and maintain pressure integrity at pipe connections.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:36:28.521Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_3": {
+    "title": "Valve body",
+    "description": "Main structural component of the valve through which the cooling medium flows and is controlled.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:36:39.175Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_4": {
+    "title": "Cooling water pipe section",
+    "description": "Pipeline segment forming part of the seawater cooling circuit for the freshwater evaporator.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:36:50.045Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_5": {
+    "title": "Pipe fasteners set",
+    "description": "Fastening hardware used to secure valve and pipe assembly connections.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:37:00.460Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_6": {
+    "title": "Valve bonnet",
+    "description": "Upper valve assembly housing internal valve components and supporting operational control mechanisms.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:37:13.578Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_7": {
+    "title": "Blue valve handle",
+    "description": "Blue-coded manual valve handle used for operating the cooling water control valve.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:37:28.740Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_8": {
+    "title": "Mounting fasteners",
+    "description": "Bolts and nuts used for securing valve components and connection points.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:37:40.736Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_9": {
+    "title": "Connection fasteners",
+    "description": "Fastening components ensuring reliable mechanical connections within the valve assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:37:53.504Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_10": {
+    "title": "Valve gaskets",
+    "description": "Sealing components installed between valve sections to prevent fluid leakage during operation.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:38:06.356Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/721_Auxiliary_piping_system_1/723010_FW,_EVAPORATOR,_FW_NO_1_(SW_COOL)_621_11": {
+    "title": "Blue valve handle extension",
+    "description": "Manual control handle used for operating and adjusting the cooling water valve assembly.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:38:18.729Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/722_Auxiliary_piping_system_2/701020_DO_transfer_systems": {
+    "title": "Diesel oil transfer pipe",
+    "description": "Pipe section used for transporting diesel oil between storage tanks, transfer pumps, and associated machinery systems.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:40:01.624Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/722_Auxiliary_piping_system_2/701020_DO_transfer_systems_1": {
+    "title": "Pipe fasteners",
+    "description": "Assembly of bolts, nuts, and fastening components used to secure pipe connections and supporting structures.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:40:12.549Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/722_Auxiliary_piping_system_2/701020_DO_transfer_systems_2": {
+    "title": "Valve bonnet",
+    "description": "Upper valve assembly housing internal valve components and supporting operational control mechanisms.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:40:23.805Z"
+  },
+  "path:Scene/FULL/7_Pipes/72_Auxiliary_piping_system/722_Auxiliary_piping_system_2/701020_DO_transfer_systems_3": {
+    "title": "Valve handle",
+    "description": "Manual control handle used for operating and adjusting the diesel oil transfer valve.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:40:43.132Z"
+  },
+  "path:Scene/FULL/8_Valves/82_Valve_2/Object_8": {
+    "title": "Gate valve",
+    "description": "Industrial gate valve used to start, stop, or isolate fluid flow within the vessel's piping system.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:42:13.333Z"
+  },
+  "path:Scene/FULL/8_Valves/82_Valve_2/Object_8_1": {
+    "title": "Valve fasteners",
+    "description": "Assembly of bolts, nuts, and fastening components used to secure valve flanges and maintain reliable mechanical connections.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:42:26.810Z"
+  },
+  "path:Scene/FULL/8_Valves/82_Valve_2/Object_8_2": {
+    "title": "Valve handwheel",
+    "description": "Manual handwheel used to operate the gate valve by raising or lowering the internal gate mechanism.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:42:38.138Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/813_Head": {
+    "title": "Valve bonnet",
+    "description": "Upper valve housing containing the stem sealing assembly and supporting the valve operating mechanism.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:43:37.438Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/812_Body": {
+    "title": "Valve body",
+    "description": "Main pressure-containing component through which the fluid flows and where the internal valve mechanism is installed.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:43:48.726Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/815_Steering_wheel": {
+    "title": "Valve handwheel",
+    "description": "Manual handwheel used to open or close the valve by rotating the valve stem.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:43:59.071Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/814_Steering_rod/Object_212047": {
+    "title": "Valve stem",
+    "description": "Mechanical shaft transmitting rotational movement from the handwheel to the internal valve mechanism.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:44:10.112Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/814_Steering_rod/Object_212047_1": {
+    "title": "Stem fastener",
+    "description": "Fastening component used to secure the valve stem assembly and maintain proper mechanical operation.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:44:21.906Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8111_Screws_Horizontal_1/81113_Screw_1": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:52:49.309Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8111_Screws_Horizontal_1/81112_Nut_1": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:53:03.897Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8111_Screws_Horizontal_1/81111_Holder_1": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:53:15.532Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8112_Screws_Horizontal_2/81123_Screw_2": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:53:56.589Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8112_Screws_Horizontal_2/81122_Nut_2": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:54:49.889Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8112_Screws_Horizontal_2/81121_Holder_2": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:54:59.735Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8113_Screws_Horizontal_3/81133_Screw_3": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:55:11.726Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8113_Screws_Horizontal_3/81132_Nut_3": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:55:22.024Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8113_Screws_Horizontal_3/81131_Holder_3": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:55:32.491Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8114_Screws_Horizontal_4/81143_Screw_4": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:55:43.065Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8114_Screws_Horizontal_4/81142_Nut_4": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:55:52.816Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8114_Screws_Horizontal_4/81141_Holder_4": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:56:03.364Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8115_Screws_Horizontal_5/81153_Screw_5": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:56:18.085Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8115_Screws_Horizontal_5/81152_Nut_5": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:56:30.012Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8115_Screws_Horizontal_5/81151_Holder_5": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:56:40.310Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8116_Screws_Horizontal_6/81163_Screw_6": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:56:52.019Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8116_Screws_Horizontal_6/81162_Nut_6": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:57:06.389Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8116_Screws_Horizontal_6/81161_Holder_6": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:57:15.108Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8117_Screws_Vertical_1/81173_Screw_1": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:57:29.761Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8117_Screws_Vertical_1/81171_Holder_1": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:57:41.638Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8117_Screws_Vertical_1/81172_Nut_1": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:57:52.085Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8118_Screws_Vertical_2/81183_Screw_2": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:58:06.509Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8118_Screws_Vertical_2/81181_Holder_2": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:58:16.238Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8118_Screws_Vertical_2/81182_Nut_2": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:58:27.843Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8119_Screws_Vertical_3/81193_Screw_3": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:58:49.407Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8119_Screws_Vertical_3/81191_Holder_3": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:59:29.396Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/8119_Screws_Vertical_3/81192_Nut_3": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T08:59:52.139Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81110_Screws_Vertical_4/811103_Screw_4": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:00:03.798Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81110_Screws_Vertical_4/811101_Holder_4": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:00:13.230Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81110_Screws_Vertical_4/811102_Nut_4": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:00:24.913Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81111_Screws_Vertical_5/811113_Screw_5": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:00:39.114Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81111_Screws_Vertical_5/811111_Holder_5": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:00:48.113Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81111_Screws_Vertical_5/811112_Nut_5": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:01:01.428Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81112_Screws_Vertical_6/811163_Screw_6": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:01:12.495Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81112_Screws_Vertical_6/811121_Holder_6": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:01:21.458Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81112_Screws_Vertical_6/811122_Nut_6": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:01:31.514Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81113_Upper_Screws_Vertical_1/811133_Screw_1": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:01:44.087Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81113_Upper_Screws_Vertical_1/811132_Nut_1": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:01:57.676Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81113_Upper_Screws_Vertical_1/811131_Holder_1": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:02:06.907Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81114_Upper_Screws_Vertical_2/811143_Screw_2": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:02:32.228Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81114_Upper_Screws_Vertical_2/811142_Nut_2": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:02:44.581Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81114_Upper_Screws_Vertical_2/811141_Holder_2": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:02:54.166Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81115_Upper_Screws_Vertical_3/811153_Screw_3": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:03:03.740Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81115_Upper_Screws_Vertical_3/811152_Nut_3": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:03:14.127Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81115_Upper_Screws_Vertical_3/811151_Holder_3": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:03:22.283Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81116_Upper_Screws_Vertical_4/811163_Screw_4": {
+    "title": "Hex bolt",
+    "description": "High-strength threaded bolt used to secure valve fastening assemblies.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:03:31.209Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81116_Upper_Screws_Vertical_4/811162_Nut_4": {
+    "title": "Hex nut",
+    "description": "Threaded fastening component used together with a bolt to create a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:03:41.398Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81116_Upper_Screws_Vertical_4/811161_Holder_4": {
+    "title": "Spacer bracket",
+    "description": "Support component positioned between fastening elements to maintain alignment and structural stability.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:03:49.292Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81117_Body_Nut/811171_Main_Nut_1": {
+    "title": "Primary body nut",
+    "description": "Main threaded fastening component used to secure the valve body assembly and withstand operational loads.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:04:22.524Z"
+  },
+  "path:Scene/FULL/8_Valves/81_Full_Valve/811_Screws/81117_Body_Nut/811172_Main_Nut_2": {
+    "title": "Secondary body nut",
+    "description": "Supporting threaded fastening component used together with the primary body nut to ensure a secure mechanical connection.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-11T09:04:35.770Z"
+  }
+}

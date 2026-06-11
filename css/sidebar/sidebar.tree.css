@@ -1,0 +1,468 @@
+/* ======================================================================
+   SIDEBAR TREE (UPDATED FOR DEEP NESTING / DT SYSTEMS)
+   - Fixes 3+ level expand by avoiding wrapper clipping
+   - Increases panel fallback height
+   - Allows nested UL/LI pseudo connectors to render correctly
+====================================================================== */
+
+.comp-group{
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px;
+
+  /* ✅ IMPORTANT: do NOT clip nested content here.
+     The panel handles clipping via max-height/overflow. */
+  overflow: visible;
+
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+
+  box-shadow: 0 10px 22px rgba(0,0,0,.18);
+}
+
+.comp-group-head{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.comp-group-head .comp-group-btn{ flex: 1; }
+
+.comp-group-btn{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  min-height: var(--hit);
+  padding: 10px 12px 10px 12px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+
+  color: rgba(255,255,255,.94);
+  text-align: left;
+
+  transition: background 160ms var(--ease2), transform 140ms var(--ease2);
+}
+
+.comp-group-title{
+  min-width: 0;
+
+  font-size: var(--t-item);
+  font-weight: 850;
+  letter-spacing: .01em;
+  line-height: 1.18;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.comp-group-chev{
+  width: 20px;
+  height: 20px;
+
+  object-fit: contain;
+  flex-shrink: 0;
+
+  opacity: .9;
+
+  transition:
+    transform 220ms var(--ease),
+    opacity 160ms var(--ease2);
+}
+
+.comp-group[aria-expanded="true"] > .comp-group-head > .comp-group-btn .comp-group-chev{
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* ----------------- PANEL (accordion) ----------------- */
+
+.comp-group-panel{
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 320ms var(--ease),
+    opacity 180ms var(--ease2),
+    transform 180ms var(--ease2);
+  will-change: max-height, opacity, transform;
+}
+
+.comp-group[aria-expanded="true"] > .comp-group-panel{
+  /* ✅ DT trees can be huge; fallback must be large.
+     JS sets --panel-h precisely. */
+  max-height: var(--panel-h, 2000px);
+  opacity: 1;
+}
+
+/* ----------------- LIST + CONNECTORS ----------------- */
+
+.comp-sublist{
+  list-style: none;
+  margin: 0;
+  padding: 10px 10px 12px;
+
+  --indent: 14px;
+
+  /* ✅ allow nested groups/connectors to render (panel clips, not UL) */
+  overflow: visible;
+}
+
+.comp-sublist > li{
+  position: relative;
+  padding-left: var(--indent);
+  margin-top: 8px;
+
+  /* ✅ prevent connector clipping for deep nesting */
+  overflow: visible;
+}
+
+.comp-sublist > li::before{
+  content:"";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255,255,255,.06);
+}
+
+.comp-sublist > li::after{
+  content:"";
+  position: absolute;
+  left: 7px;
+  top: 22px;
+  width: 10px;
+  height: 1px;
+  background: rgba(255,255,255,.06);
+}
+
+.comp-sublist > li:last-child::before{
+  bottom: calc(100% - 24px);
+}
+
+.comp-sublist .comp-group{
+  border-radius: 14px;
+  border-color: rgba(255,255,255,.06);
+  background: linear-gradient(180deg, rgba(255,255,255,.032), rgba(255,255,255,.014));
+  box-shadow: 0 10px 20px rgba(0,0,0,.16);
+}
+
+/* Optional: if you want ONLY top-level groups to clip rounded corners */
+#componentList > li > .comp-group,
+#componentList > .comp-group{
+  overflow: hidden;
+}
+
+/* ----------------- ITEMS ----------------- */
+
+.component-list-item{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.component-list-btn{
+  width: 100%;
+  min-height: var(--hit);
+
+  border: 1px solid rgba(255,255,255,.07);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  color: rgba(255,255,255,.92);
+
+  padding: 10px 12px;
+  border-radius: 14px;
+  font-size: var(--t-item);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+  transition:
+    transform 140ms var(--ease2),
+    border-color 160ms var(--ease2),
+    background 160ms var(--ease2),
+    box-shadow 160ms var(--ease2);
+}
+
+.component-list-bullet{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.component-list-label{
+  min-width: 0;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-height: 1.35;
+  opacity: .96;
+}
+
+/* ----------------- EYE BUTTONS ----------------- */
+
+.component-eye{
+  width: var(--icon);
+  height: var(--icon);
+  border-radius: 14px;
+
+  border: 1px solid #11cee3;
+  background: rgba(255,255,255,.03);
+  color: rgba(255,255,255,.92);
+
+  display: inline-grid;
+  place-items: center;
+
+  cursor: pointer;
+  transition:
+    transform 140ms var(--ease2),
+    background 160ms var(--ease2),
+    border-color 160ms var(--ease2),
+    opacity 160ms var(--ease2),
+    box-shadow 160ms var(--ease2);
+}
+
+.component-eye:hover{
+  background: #0d96a5;
+  border-color: rgba(56,189,248,.26);
+}
+.component-eye.is-off{ opacity: .35; }
+
+.component-eye--group{
+  border-radius: 999px;
+  width: calc(var(--icon) - 2px);
+  height: calc(var(--icon) - 2px);
+}
+
+/* ----------------- ACTIVE / FOCUS STYLES ----------------- */
+
+.component-list-btn.is-active{
+  border-color: #11cee3;
+}
+
+.component-list-btn:focus-visible,
+.comp-group-btn:focus-visible,
+.component-close:focus-visible,
+.component-eye:focus-visible,
+.component-toggle:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(56,189,248,.34);
+}
+
+/* ----------------- SCROLLBAR (body) ----------------- */
+
+.component-sidebar-body::-webkit-scrollbar{ width: 10px; }
+.component-sidebar-body::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,.12);
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,0);
+  background-clip: padding-box;
+}
+.component-sidebar-body::-webkit-scrollbar-thumb:hover{
+  background: rgba(255,255,255,.20);
+  background-clip: padding-box;
+}
+
+/* ----------------- TEXT ALIGN FIXES ----------------- */
+
+.component-list-btn{
+  justify-items: start;
+  text-align: left;
+}
+
+.component-list-label{
+  justify-self: start;
+  text-align: left;
+}
+
+/* ----------------- SPEC ROWS ----------------- */
+
+.component-list-btn.spec-btn{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+
+  justify-items: start;
+  text-align: left;
+}
+
+.component-list-btn.spec-btn .spec-left{
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.component-list-btn.spec-btn .spec-label{
+  min-width: 0;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  opacity: .94;
+}
+.component-list-btn.spec-btn .spec-right{
+  justify-self: end;
+}
+
+.component-list-btn.spec-row .spec-value{
+  font-weight: 900;
+  letter-spacing: .01em;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.component-list-btn.spec-pdf .spec-cta{
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(56,189,248,.30);
+  background: rgba(56,189,248,.10);
+}
+
+.component-list-btn.spec-pdf:hover .spec-cta{
+  background: rgba(56,189,248,.16);
+}
+
+.component-sidebar .component-list-btn.spec-row:hover{
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  border-color: rgba(255,255,255,.07);
+  transform: none;
+  box-shadow: none;
+}
+
+.component-sidebar .component-list-btn.spec-row{
+  cursor: default;
+  transition: none;
+}
+
+.comp-group.is-active{
+  border-color: #11cee3;
+}
+
+.comp-group.is-active > .comp-group-head > .comp-group-btn{
+  color: #11cee3;
+}
+
+.comp-group.is-active
+  > .comp-group-head
+  > .comp-group-btn
+  .comp-group-title{
+  color: #11cee3;
+}
+
+/* ----------------- PDF ACTIONS - COMPACT ICON STYLE ----------------- */
+
+.component-list-btn.spec-pdf{
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.component-list-btn.spec-pdf .spec-left{
+  width: 100%;
+}
+
+.component-list-btn.spec-pdf .spec-right{
+  width: 100%;
+  justify-self: stretch;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+.pdf-icon-btn{
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.035);
+
+  cursor: pointer;
+  transition:
+    transform 140ms var(--ease2),
+    background 160ms var(--ease2),
+    border-color 160ms var(--ease2),
+    box-shadow 160ms var(--ease2);
+}
+
+.pdf-icon-btn:hover{
+  background: #11cee3;
+  border-color: rgba(56,189,248,.35);
+}
+
+.pdf-icon-danger:hover{
+  background: rgba(248,113,113,.14);
+  border-color: rgba(248,113,113,.40);
+}
+
+.pdf-icon-btn img{
+  width: 21px;
+  height: 21px;
+  display: block;
+  object-fit: contain;
+  pointer-events: none;
+  filter: brightness(0) invert(1);
+}
+
+.pdf-add-pill{
+  min-height: 38px;
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(56,189,248,.32);
+  background: rgba(56,189,248,.12);
+
+  font-size: 13px;
+  font-weight: 900;
+  color: rgba(255,255,255,.94);
+  white-space: nowrap;
+}
+
+.pdf-add-pill img{
+  width: 18px;
+  height: 18px;
+  display: block;
+  pointer-events: none;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar-action img {
+  width: 25px;
+  height: 25px;
+
+  display: block;
+  pointer-events: none;
+}
