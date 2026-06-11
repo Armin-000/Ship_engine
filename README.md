@@ -53,6 +53,11 @@ The project was designed from the ground up with a modular architecture that cle
 - Transparent canvas with full light/dark theme switching — scene background and light intensities update live
 
 ### Interactive Component Inspection
+
+The platform allows engineers to isolate individual components, inspect technical metadata, and access linked documentation directly from the 3D environment.
+
+![Component Inspection](./public/images/inspection.png)
+
 - **Raycaster picking** — click any mesh in the 3D scene to select and inspect it
 - **Focus / isolation mode** — selected component is highlighted while the rest of the model fades; camera animates to fit the part in frame
 - **Hover highlighting** — emissive color overlay on mouseover for instant part identification
