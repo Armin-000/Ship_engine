@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Smeco platform viewer | Interactive Smeco GLB Inspection</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Professional interactive 3D engine viewer for GLB models. Inspect assemblies with component isolation, hierarchical navigation, labels, exploded view and smooth camera focus — powered by Three.js."
+    />
+    <meta
+      name="keywords"
+      content="3D engine viewer, engine GLB, Three.js, WebGL, exploded view, component isolation, technical visualization, GLB viewer, interactive 3D, engineering inspection"
+    />
+    <meta name="author" content="Your Company / Your Name" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://your-domain.com/engine-viewer" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="3D Engine Viewer – Interactive GLB Inspection" />
+    <meta
+      property="og:description"
+      content="Explore an engine GLB model in a professional Three.js viewer with exploded views, component focus, labels and hierarchical navigation."
+    />
+    <meta property="og:url" content="https://your-domain.com/engine-viewer" />
+    <meta property="og:image" content="https://your-domain.com/images/og-engine-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="3D Engine Viewer" />
+    <meta
+      name="twitter:description"
+      content="Interactive Three.js-based 3D viewer for engine GLB models with exploded view and component isolation."
+    />
+    <meta name="twitter:image" content="https://your-domain.com/images/og-engine-preview.jpg" />
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+
+    <link rel="icon"
+          type="image/svg+xml"
+          href="/favicon/favicon.svg">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/favicon/favicon-96x96.png">
+
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png">
+
+    <meta name="apple-mobile-web-app-title"
+          content="SMECO">
+
+    <link rel="manifest"
+          href="/site.webmanifest">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/viewer-base.css" />
+    <link rel="stylesheet" href="css/viewer-ui.css" />
+    <link rel="stylesheet" href="css/viewer-sidebar.css" />
+    <link rel="stylesheet" href="css/viewer-preloader.css" />
+    <link rel="stylesheet" href="css/viewer-login.css" />
+  </head>
+
+
+  <body>
+
+    <div id="loginScreen" class="login-screen">
+
+      <div class="login-brand">
+        <img src="/images/testS.svg" alt="Smeco Viewer Logo">
+      </div>
+
+      <div class="login-shell">
+
+        <div class="login-left">
+
+          <h1 class="login-title">
+            SMECO
+          </h1>
+
+            <p class="login-subtitle">
+              Marine digital twin viewer
+            </p>
+
+            <div class="login-socials">
+
+              <div class="social-group">
+                <button
+                  type="button"
+                  class="social-btn"
+                  title="User guide"
+                  onclick="window.open('/docs/help/SMECOViewerUserGuide.pdf', '_blank')"
+                >
+                  <img src="/images/pdf-file-svgrepo-com.svg" alt="user guide">
+                </button>
+
+                <span>User Guide</span>
+              </div>
+
+              <div class="social-group">
+                <a
+                  class="social-btn"
+                  href="mailto:support@smeco.hr"
+                  title="Support"
+                >
+                  <img
+                    src="/images/email-envelope-gmail-svgrepo-com.svg"
+                    alt="Support"
+                  >
+                </a>
+
+                <span>Support</span>
+              </div>
+
+              <div class="social-group">
+                <a
+                  class="social-btn"
+                  href="http://alphawave.hr/"
+                  target="_blank"
+                  title="About"
+                >
+                  <img src="/images/about-information-info-help-svgrepo-com.svg" alt="About">
+                </a>
+
+                <span>About</span>
+              </div>
+
+            </div>
+
+            <div class="login-divider">
+              <span></span>
+              <p>OPERATOR ACCESS</p>
+              <span></span>
+            </div>
+
+          <label class="login-field">
+            <span>Operation ID</span>
+
+            <div class="input-wrap">
+              <img
+                class="input-icon"
+                src="/images/username.svg"
+                alt=""
+              >
+
+              <input
+                id="loginUsername"
+                type="text"
+                placeholder="Enter operation ID"
+              >
+            </div>
+          </label>
+
+          <label class="login-field">
+            <span>Access key</span>
+
+            <div class="input-wrap password-wrap">
+
+              <img
+                class="input-icon"
+                src="/images/password.svg"
+                alt=""
+              >
+
+              <input
+                id="loginPassword"
+                type="password"
+                placeholder="Enter access key"
+                autocomplete="new-password"
+              />
+
+              <button
+                id="togglePassword"
+                type="button"
+                aria-label="Show password"
+              >
+                <svg
+                  id="eyeIcon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+
+            </div>
+          </label>
+
+          <button
+            id="loginSubmit"
+            class="login-submit"
+            type="button"
+          >
+            ENTER PLATFORM
+          </button>
+
+          <div id="loginError" class="login-error"></div>
+
+          <div id="systemStatus" class="system-status">
+            <div class="status-item">
+              <span class="status-icon">●</span>
+              <div>
+                <strong>CHECKING</strong>
+                <small>API STATUS</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="login-right">
+
+          <video class="login-video" autoplay muted loop playsinline>
+            <source src="/videos/ship.mp4" type="video/mp4">
+          </video>
+
+          <button id="videoToggle" class="video-toggle">
+            <img src="/images/pause.svg" alt="Pause video">
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <button
+      id="componentToggle"
+      class="component-toggle"
+      type="button"
+      aria-label="Open component list"
+    >
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <svg class="toggle-x" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+        />
+      </svg>
+    </button>
+
+    <div class="theme-menu" id="themeMenu">
+      <button
+        id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-haspopup="menu"
+        aria-expanded="false"
+        aria-label="Theme options"
+      >
+        <svg class="theme-icon" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+          <path
+            fill="currentColor"
+            d="M160 448a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H608zM160 896a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H608z"
+          />
+        </svg>
+      </button>
+
+      <div class="theme-dropdown" id="themeDropdown" role="menu" aria-label="Theme menu">
+        <button class="theme-item" type="button" role="menuitem" data-theme="dark" aria-label="Dark mode"></button>
+        <button class="theme-item" type="button" role="menuitem" data-theme="light" aria-label="Light mode"></button>
+      </div>
+    </div>
+
+    <div id="viewer" class="mxd-3d-viewer" data-loading="1">
+      <h3 id="model-name" class="engine-title"></h3>
+
+      <aside id="componentSidebar" class="component-sidebar">
+        <div class="component-sidebar-inner">
+          <div class="component-sidebar-header">
+            <h4 class="component-sidebar-title">
+              Smeco
+            </h4>
+          </div>
+
+          <div class="component-sidebar-body">
+            <div id="componentList" class="component-list"></div>
+          </div>
+        </div>
+      </aside>
+
+      <div id="three" class="mxd-3d-canvas"></div>
+
+      <div id="loadingOverlay" class="loading-overlay"></div>
+
+      <div class="zoom-controls">
+        <div class="action-buttons-row">
+          <button id="explodeBtn" class="explode-btn" style="display: none">Explode</button>
+        </div>
+      </div>
+
+      <div class="circle-menu" id="circleMenu">
+          <button class="circle-main" id="circleMainBtn" type="button">
+            <img src="/images/plus.svg" alt="">
+          </button>
+
+          <button class="circle-item circle-reset" id="resetBtnGlobal" type="button">
+            <img src="/images/reset.svg" alt="">
+          </button>
+
+          <button class="circle-item circle-theme" id="circleThemeBtn" type="button">
+            <img src="/images/dark.svg" alt="">
+          </button>
+
+          <button class="circle-item circle-rotate" id="circleRotateBtn" type="button">
+            <img src="/images/rotation-arrows.svg" alt="">
+          </button>
+
+        <div class="circle-submenu circle-theme-submenu" id="circleThemeSubmenu">
+          <button class="circle-subitem" data-circle-theme="dark" type="button">
+            <img src="/images/dark-mode.svg" alt="">
+          </button>
+
+          <button class="circle-subitem" data-circle-theme="light" type="button">
+            <img src="/images/light-mode.svg" alt="">
+          </button>
+        </div>
+
+        <div class="circle-submenu circle-rotate-submenu" id="circleRotateSubmenu">
+
+          <button class="circle-subitem" data-circle-rot="left" type="button">
+            <img class="rotate-arrow rotate-left" src="/images/arrow.svg" alt="">
+          </button>
+
+          <button class="circle-subitem" data-circle-rot="right" type="button">
+            <img class="rotate-arrow rotate-right" src="/images/arrow.svg" alt="">
+          </button>
+
+          <button class="circle-subitem" data-circle-rot="up" type="button">
+            <img class="rotate-arrow rotate-up" src="/images/arrow.svg" alt="">
+          </button>
+
+          <button class="circle-subitem" data-circle-rot="down" type="button">
+            <img class="rotate-arrow rotate-down" src="/images/arrow.svg" alt="">
+          </button>
+
+        </div>
+      </div>
+
+      <div class="rotate-menu" id="rotateMenu" data-open="0">
+        <button
+          id="rotateToggle"
+          class="rotate-toggle"
+          type="button"
+          aria-haspopup="menu"
+          aria-expanded="false"
+          aria-label="Rotate options"
+        >
+          ⟴
+        </button>
+
+        <div class="rotate-controls" id="rotateDropdown" role="menu" aria-label="Rotate menu">
+          <button class="rot-btn" data-rot="left" role="menuitem" aria-label="Rotate left">→</button>
+          <button class="rot-btn" data-rot="right" role="menuitem" aria-label="Rotate right">←</button>
+          <button class="rot-btn" data-rot="up" role="menuitem" aria-label="Rotate bottom view">↑</button>
+          <button class="rot-btn" data-rot="down" role="menuitem" aria-label="Rotate top view">↓</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="module" src="/viewer/app/app.entry.js"></script>
+  </body>
+</html>

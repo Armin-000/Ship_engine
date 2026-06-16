@@ -1,0 +1,32 @@
+{
+  "name": "engine",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ENGINE 2.0 — production grade modular 3D technical viewer built with Three.js and Vite.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:analyze": "cross-env ANALYZE=true vite build",
+    "preview": "vite preview",
+    "knip": "knip",
+    "sfia": "node src/addSfiaIdsToComponents.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphawave-software/engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alphawave-software/engine/issues"
+  },
+  "homepage": "https://github.com/alphawave-software/engine#readme",
+  "license": "ISC",
+  "dependencies": {
+    "three": "0.160.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "knip": "^5.85.0",
+    "rollup-plugin-visualizer": "^7.0.0",
+    "vite": "^7.3.1"
+  }
+}

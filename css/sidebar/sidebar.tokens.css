@@ -1,0 +1,40 @@
+:root{
+  --sb-w: clamp(300px, 24vw, 380px);
+  --sb-radius: 20px;
+  --sb-pad: 16px;
+
+  --bg0: rgba(0, 0, 0, 0.99);
+  --bg1: rgba(0, 0, 0, 0.99);
+
+  --stroke: rgba(255,255,255,.10);
+  --stroke2: rgba(255,255,255,.06);
+
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.66);
+
+  --accent: #11cee3;
+  --accentA: rgba(56,189,248,.22);
+  --accentB: rgba(56,189,248,.10);
+
+  --blur: 18px;
+
+  --hit: 46px;
+  --icon: 38px;
+
+  --t-title: 16px;
+  --t-sub: 12px;
+  --t-item: 13.5px;
+
+  --shadow: 0 26px 72px rgba(0,0,0,.58);
+  --shadow2: 0 14px 34px rgba(0,0,0,.32);
+
+  --ease: cubic-bezier(.16,1,.3,1);
+  --ease2: cubic-bezier(.2,.85,.2,1);
+  --dur: 260ms;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --toggle-size: var(--ctrl-btn-size);
+}

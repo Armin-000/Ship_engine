@@ -1,0 +1,130 @@
+/* PRELOADER OVERLAY */
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+
+  background: #000000;
+
+  z-index: 15000;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+
+.loading-overlay.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* CONTENT */
+.preloader {
+  display: grid;
+  place-items: center;
+  gap: 26px;
+  padding: 26px 28px;
+  text-align: center;
+}
+
+/* SMECO ASSEMBLE LOGO */
+.preloader-logo-wrap {
+  width: 280px;
+  height: 280px;
+}
+
+.preloader-logo {
+  width: 220px;
+  height: 220px;
+}
+
+.logo-piece {
+  fill: #ffffff;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: smecoAssemble 1.25s cubic-bezier(.18, .9, .25, 1) forwards;
+}
+
+.p1 { transform: translate(-28px, -22px) rotate(-18deg); animation-delay: .00s; }
+.p2 { transform: translate(30px, -18px) rotate(18deg); animation-delay: .08s; }
+.p3 { transform: translate(-22px, 0) rotate(-10deg); animation-delay: .16s; }
+.p4 { transform: translate(28px, 0) rotate(10deg); animation-delay: .24s; }
+.p5 { transform: translate(-20px, 22px) rotate(12deg); animation-delay: .32s; }
+.p6 { transform: translate(28px, 26px) rotate(-12deg); animation-delay: .40s; }
+.p7 { transform: translate(-34px, 8px) rotate(-14deg); animation-delay: .20s; }
+.p8 { transform: translate(-34px, 30px) rotate(14deg); animation-delay: .36s; }
+.p9 { transform: translate(0, 34px) rotate(8deg); animation-delay: .44s; }
+
+@keyframes smecoAssemble {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.beta-badge {
+  padding: 7px 12px;
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: rgba(0, 212, 255, 0.08);
+}
+
+@keyframes showText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .preloader {
+    gap: 22px;
+  }
+
+  .preloader-logo-wrap {
+    width: 92px;
+    height: 92px;
+  }
+
+  .preloader-logo {
+    width: 88px;
+    height: 88px;
+  }
+
+  .preloader-text {
+    font-size: 25px;
+  }
+
+  .beta-badge {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  .logo-piece,
+  .preloader-text {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

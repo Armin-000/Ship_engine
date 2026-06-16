@@ -1,0 +1,56 @@
+.sidebar-contact{
+  margin: 14px 0 16px;
+  padding: 12px 14px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.045),
+    rgba(255,255,255,.018)
+  );
+
+  display: grid;
+  gap: 10px;
+
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+
+.sidebar-contact .contact-row{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-contact .contact-icon{
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  font-size: 16px;
+}
+
+.sidebar-contact .contact-name{
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: .02em;
+  color: rgba(255,255,255,.92);
+}
+
+.sidebar-contact .contact-link{
+  color: rgba(255,255,255,.88);
+  font-size: 14px;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.sidebar-contact .contact-link:hover{
+  color: #38bdf8;
+  text-decoration: underline;
+}
