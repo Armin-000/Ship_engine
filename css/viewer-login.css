@@ -706,3 +706,18 @@
 .password-wrap input {
   padding-right: 56px;
 }
+
+.login-field input:-webkit-autofill,
+.login-field input:-webkit-autofill:hover,
+.login-field input:-webkit-autofill:focus,
+.login-field input:-webkit-autofill:active{
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
+
+  -webkit-box-shadow: 0 0 0 1000px #141414 inset;
+  box-shadow: 0 0 0 1000px #141414 inset;
+
+  border: 1px solid #11cee3;
+
+  transition: background-color 9999s ease-in-out 0s;
+}

@@ -65,33 +65,41 @@ export function createDom({
 
         <button
           type="button"
-          class="sidebar-action sidebar-action--icon sidebar-action--help"
-          aria-label="Help"
-          title="Help"
+          class="sidebar-action sidebar-action--help"
+          aria-label="Documentation"
+          title="Documentation"
         >
           <img
             src="/images/question-svgrepo-com.svg"
             alt=""
             aria-hidden="true"
           />
+
+          <span class="sidebar-action-label">
+            Documentation
+          </span>
         </button>
 
         <button
           type="button"
-          class="sidebar-action sidebar-action--icon sidebar-action--emergency"
-          aria-label="Emergency Light"
-          title="Emergency Light"
+          class="sidebar-action sidebar-action--emergency"
+          aria-label="Emergency light"
+          title="Emergency light"
         >
           <img
             src="/images/light-emergency-on-svgrepo-com.svg"
             alt=""
             aria-hidden="true"
           />
+
+          <span class="sidebar-action-label">
+            Emergency light
+          </span>
         </button>
 
         <button
           type="button"
-          class="sidebar-action sidebar-action--icon sidebar-action--logout"
+          class="sidebar-action sidebar-action--logout"
           aria-label="Logout"
           title="Logout"
         >
@@ -100,6 +108,10 @@ export function createDom({
             alt=""
             aria-hidden="true"
           />
+
+          <span class="sidebar-action-label">
+            Logout
+          </span>
         </button>
 
       </div>
@@ -112,13 +124,17 @@ export function createDom({
       window.open(helpUrl, '_blank', 'noopener');
     });
 
-    footer
-      .querySelector('.sidebar-action--emergency')
-      ?.addEventListener('click', () => {
-        if (typeof onEmergencyLight === 'function') {
-          onEmergencyLight();
-        }
-      });
+    const emergencyBtn = footer.querySelector('.sidebar-action--emergency');
+
+    emergencyBtn?.addEventListener('click', () => {
+
+      emergencyBtn.classList.toggle('is-active');
+
+      if (typeof onEmergencyLight === 'function') {
+        onEmergencyLight();
+      }
+
+    });
 
     footer
       .querySelector('.sidebar-action--logout')

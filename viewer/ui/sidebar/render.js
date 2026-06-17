@@ -334,6 +334,14 @@ export function createRenderer(ctx) {
     const savedTitle = componentsCache?.[componentKey]?.title;
     const label = savedTitle || rawLabel;
 
+    const hiddenComponentTitles = new Set([
+      'Generator exhaust system',
+    ]);
+
+    if (savedTitle && hiddenComponentTitles.has(savedTitle)) {
+      return;
+    }
+
     if (savedTitle && mesh?.userData) {
       mesh.userData.displayName = savedTitle;
     }
@@ -396,7 +404,7 @@ export function createRenderer(ctx) {
 
     const eyeBtn = document.createElement('button');
     eyeBtn.type = 'button';
-    eyeBtn.className = 'component-eye';
+    eyeBtn.className = 'component-eye component-eye--group';
     eyeBtn.setAttribute('aria-label', 'Toggle visibility');
 
     setEyeIcon(eyeBtn, !actions?.isMeshHidden?.(mesh));
@@ -422,8 +430,8 @@ export function createRenderer(ctx) {
       rafSyncHeights();
     });
 
+    btn.appendChild(eyeBtn);
     li.appendChild(btn);
-    li.appendChild(eyeBtn);
     ul.appendChild(li);
   }
 
@@ -441,8 +449,12 @@ export function createRenderer(ctx) {
     headerBtn.type = 'button';
     headerBtn.className = 'comp-group-btn';
     headerBtn.innerHTML = `
+      <img class="comp-group-chev"
+          src="/images/arrow-down-bold-svgrepo-com.svg"
+          alt=""
+          aria-hidden="true">
+
       <span class="comp-group-title">${nodeTitle(treeNode)}</span>
-      <img class="comp-group-chev" src="/images/arrow-down-bold-svgrepo-com.svg" alt="" aria-hidden="true">
     `;
 
     const groupEye = document.createElement('button');

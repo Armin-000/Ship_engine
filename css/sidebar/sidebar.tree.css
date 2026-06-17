@@ -15,8 +15,6 @@
 
   background:
     linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
-
-  box-shadow: 0 10px 22px rgba(0,0,0,.18);
 }
 
 .comp-group-head{
@@ -26,7 +24,9 @@
   padding-right: 10px;
 }
 
-.comp-group-head .comp-group-btn{ flex: 1; }
+.comp-group-head .comp-group-btn{
+  flex: 1;
+}
 
 .comp-group-btn{
   width: 100%;
@@ -35,17 +35,18 @@
   cursor: pointer;
 
   min-height: var(--hit);
-  padding: 10px 12px 10px 12px;
+  padding: 10px 12px;
 
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 
   color: rgba(255,255,255,.94);
   text-align: left;
 
-  transition: background 160ms var(--ease2), transform 140ms var(--ease2);
+  transition:
+    background 160ms var(--ease2),
+    transform 140ms var(--ease2);
 }
 
 .comp-group-title{
@@ -69,7 +70,7 @@
   object-fit: contain;
   flex-shrink: 0;
 
-  opacity: .9;
+  opacity: .55;
 
   transition:
     transform 220ms var(--ease),
@@ -87,10 +88,12 @@
   overflow: hidden;
   max-height: 0;
   opacity: 0;
+
   transition:
     max-height 320ms var(--ease),
     opacity 180ms var(--ease2),
     transform 180ms var(--ease2);
+
   will-change: max-height, opacity, transform;
 }
 
@@ -124,7 +127,7 @@
 }
 
 .comp-sublist > li::before{
-  content:"";
+  content: "";
   position: absolute;
   left: 7px;
   top: 0;
@@ -134,7 +137,7 @@
 }
 
 .comp-sublist > li::after{
-  content:"";
+  content: "";
   position: absolute;
   left: 7px;
   top: 22px;
@@ -151,7 +154,6 @@
   border-radius: 14px;
   border-color: rgba(255,255,255,.06);
   background: linear-gradient(180deg, rgba(255,255,255,.032), rgba(255,255,255,.014));
-  box-shadow: 0 10px 20px rgba(0,0,0,.16);
 }
 
 /* Optional: if you want ONLY top-level groups to clip rounded corners */
@@ -165,10 +167,8 @@
 .component-list-item{
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 10px;
+  display: block;
+  width: 100%;
 }
 
 .component-list-btn{
@@ -188,12 +188,26 @@
   align-items: center;
   gap: 10px;
 
+  justify-items: start;
+  text-align: left;
+
   cursor: pointer;
   transition:
     transform 140ms var(--ease2),
     border-color 160ms var(--ease2),
     background 160ms var(--ease2),
-    box-shadow 160ms var(--ease2);
+}
+
+/* Mesh/component rows only.
+   PDF/spec rows keep their own layout below. */
+.component-list-btn:not(.spec-btn){
+  padding: 6px 10px;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.component-list-btn:not(.spec-btn) > .component-eye{
+  justify-self: end;
+  align-self: center;
 }
 
 .component-list-bullet{
@@ -205,13 +219,19 @@
 
 .component-list-label{
   min-width: 0;
+  width: 100%;
+
   white-space: normal;
   overflow: visible;
   text-overflow: unset;
   overflow-wrap: anywhere;
   word-break: normal;
+
   line-height: 1.35;
   opacity: .96;
+
+  justify-self: start;
+  text-align: left;
 }
 
 /* ----------------- EYE BUTTONS ----------------- */
@@ -229,24 +249,60 @@
   place-items: center;
 
   cursor: pointer;
+
+  /* Hidden by default. It appears only when the user hovers the row/header. */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(.9);
+
   transition:
     transform 140ms var(--ease2),
     background 160ms var(--ease2),
     border-color 160ms var(--ease2),
     opacity 160ms var(--ease2),
-    box-shadow 160ms var(--ease2);
+    visibility 160ms var(--ease2),
 }
 
 .component-eye:hover{
   background: #0d96a5;
   border-color: rgba(56,189,248,.26);
 }
-.component-eye.is-off{ opacity: .35; }
+
+.component-eye.is-off{
+  border-color: rgba(17,206,227,.35);
+  background: rgba(255,255,255,.02);
+
+  opacity: .35;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+}
 
 .component-eye--group{
   border-radius: 999px;
   width: calc(var(--icon) - 2px);
   height: calc(var(--icon) - 2px);
+}
+
+/* Show eye icons only on hover.
+   No focus-within here, because after click the button can keep focus
+   and the icon would look "fixed" on screen. */
+.component-list-btn:hover > .component-eye,
+.comp-group-head:hover > .component-eye{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+/* Hidden/off state: still only visible on hover, but dimmed. */
+.component-list-btn:hover > .component-eye.is-off,
+.comp-group-head:hover > .component-eye.is-off{
+  opacity: .35;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
 }
 
 /* ----------------- ACTIVE / FOCUS STYLES ----------------- */
@@ -261,33 +317,24 @@
 .component-eye:focus-visible,
 .component-toggle:focus-visible{
   outline: none;
-  box-shadow: 0 0 0 3px rgba(56,189,248,.34);
 }
 
 /* ----------------- SCROLLBAR (body) ----------------- */
 
-.component-sidebar-body::-webkit-scrollbar{ width: 10px; }
+.component-sidebar-body::-webkit-scrollbar{
+  width: 10px;
+}
+
 .component-sidebar-body::-webkit-scrollbar-thumb{
   background: rgba(255,255,255,.12);
   border-radius: 999px;
   border: 2px solid rgba(0,0,0,0);
   background-clip: padding-box;
 }
+
 .component-sidebar-body::-webkit-scrollbar-thumb:hover{
   background: rgba(255,255,255,.20);
   background-clip: padding-box;
-}
-
-/* ----------------- TEXT ALIGN FIXES ----------------- */
-
-.component-list-btn{
-  justify-items: start;
-  text-align: left;
-}
-
-.component-list-label{
-  justify-self: start;
-  text-align: left;
 }
 
 /* ----------------- SPEC ROWS ----------------- */
@@ -304,6 +351,7 @@
 
 .component-list-btn.spec-btn .spec-left{
   min-width: 0;
+
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -312,10 +360,12 @@
 
 .component-list-btn.spec-btn .spec-label{
   min-width: 0;
+
   white-space: normal;
   overflow: visible;
   text-overflow: unset;
   overflow-wrap: anywhere;
+
   line-height: 1.35;
   opacity: .94;
 
@@ -330,22 +380,31 @@
 .component-list-btn.spec-row .spec-value{
   font-weight: 900;
   letter-spacing: .01em;
+
   padding: 6px 10px;
   border-radius: 999px;
+
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.03);
 }
 
 .component-list-btn.spec-pdf .spec-cta{
   font-weight: 900;
+
   padding: 6px 10px;
   border-radius: 12px;
+
   border: 1px solid rgba(56,189,248,.30);
   background: rgba(56,189,248,.10);
 }
 
 .component-list-btn.spec-pdf:hover .spec-cta{
   background: rgba(56,189,248,.16);
+}
+
+.component-sidebar .component-list-btn.spec-row{
+  cursor: default;
+  transition: none;
 }
 
 .component-sidebar .component-list-btn.spec-row:hover{
@@ -355,10 +414,7 @@
   box-shadow: none;
 }
 
-.component-sidebar .component-list-btn.spec-row{
-  cursor: default;
-  transition: none;
-}
+/* ----------------- EXPANDED GROUP STYLE ----------------- */
 
 .comp-group[aria-expanded="true"]{
   border-color: #11cee3;
@@ -388,8 +444,13 @@
   border-radius: 14px;
 }
 
+.component-list-btn.spec-pdf .component-list-bullet{
+  display: none;
+}
+
 .component-list-btn.spec-pdf .spec-left{
   width: 100%;
+  grid-template-columns: 1fr;
 }
 
 .component-list-btn.spec-pdf .spec-right{
@@ -411,7 +472,6 @@
   justify-content: center;
 
   border-radius: 14px;
-
   border: 1px solid #11cee3;
 
   transition:
@@ -432,6 +492,7 @@
 .pdf-icon-btn img{
   width: 21px;
   height: 21px;
+
   display: block;
   object-fit: contain;
   pointer-events: none;
@@ -461,12 +522,14 @@
 .pdf-add-pill img{
   width: 18px;
   height: 18px;
+
   display: block;
   pointer-events: none;
+
   filter: brightness(0) invert(1);
 }
 
-.sidebar-action img {
+.sidebar-action img{
   width: 25px;
   height: 25px;
 
@@ -474,10 +537,14 @@
   pointer-events: none;
 }
 
-/* SIDEBAR SEARCH */
+/* ----------------- SIDEBAR SEARCH ----------------- */
 
 .sidebar-search{
   margin-bottom: 14px;
+}
+
+.sidebar-search-wrap{
+  position: relative;
 }
 
 .sidebar-search-input{
@@ -485,11 +552,11 @@
   height: 44px;
 
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.10);
+  border: 1px solid #0c8896;
 
   background: rgba(255,255,255,.04);
 
-  padding: 0 14px;
+  padding: 0 44px 0 14px;
 
   color: white;
   font-size: 14px;
@@ -502,14 +569,6 @@
 .sidebar-search-input:focus{
   outline: none;
   border-color: #11cee3;
-
-  box-shadow:
-    0 0 0 1px rgba(17,206,227,.25),
-    0 0 18px rgba(17,206,227,.18);
-}
-
-.sidebar-search-wrap{
-  position: relative;
 }
 
 .sidebar-search-clear{
@@ -546,10 +605,3 @@
   opacity: 1;
 }
 
-.component-list-btn.spec-pdf .component-list-bullet{
-  display: none;
-}
-
-.component-list-btn.spec-pdf .spec-left{
-  grid-template-columns: 1fr;
-}
