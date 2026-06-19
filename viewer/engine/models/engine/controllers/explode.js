@@ -243,15 +243,16 @@ export function prepareExplode(model) {
     });
   }
 
-  console.log(`[EXPLODE] Registered parts: ${state.parts.length}`);
-  console.table(
-    state.parts.map((p) => ({
-      mesh: p.name,
-      source: p.source,
-      config: p.configName,
-      hierarchy: p.hierarchy,
-    }))
-  );
+// console.log(`[EXPLODE] Registered parts: ${state.parts.length}`);
+
+// console.table(
+//   state.parts.map((p) => ({
+//     mesh: p.name,
+//     source: p.source,
+//     config: p.configName,
+//     hierarchy: p.hierarchy,
+//   }))
+// );
 
   state.t = 0;
   state.isExploded = false;

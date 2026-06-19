@@ -159,31 +159,33 @@ export function prepareSystemExplode(root, options = {}) {
 
   activeRoot.updateWorldMatrix(true, true);
 
-  console.group("[SYSTEM EXPLODE DEBUG] Active root:", activeRoot.name);
+// console.group("[SYSTEM EXPLODE DEBUG] Active root:", activeRoot.name);
 
-  activeRoot.traverse((obj) => {
-    if (obj.name) {
-      console.log({
-        name: obj.name,
-        displayName: obj.userData?.displayName,
-        breadcrumb: obj.userData?.breadcrumb,
-        type: obj.type,
-      });
-    }
-  });
+/*
+activeRoot.traverse((obj) => {
+  if (obj.name) {
+    console.log({
+      name: obj.name,
+      displayName: obj.userData?.displayName,
+      breadcrumb: obj.userData?.breadcrumb,
+      type: obj.type,
+    });
+  }
+});
+*/
 
-  console.groupEnd();
+//  console.groupEnd();
 
   for (const [partName, rule] of Object.entries(activeConfig)) {
     const obj = findChildByName(activeRoot, partName);
 
     if (!obj) {
-      console.warn("[SYSTEM EXPLODE] Part not found:", partName);
+      // console.warn("[SYSTEM EXPLODE] Part not found:", partName);
       continue;
     }
 
     if (!obj.parent) {
-      console.warn("[SYSTEM EXPLODE] Part has no parent:", partName);
+      // console.warn("[SYSTEM EXPLODE] Part has no parent:", partName);
       continue;
     }
 
@@ -229,13 +231,15 @@ export function prepareSystemExplode(root, options = {}) {
     });
   }
 
-  console.log(`[SYSTEM EXPLODE] Registered parts: ${items.length}`);
+  // console.log(`[SYSTEM EXPLODE] Registered parts: ${items.length}`);
+  /*
   console.table(
     items.map((p) => ({
       name: p.name,
       object: p.obj.name,
     }))
   );
+  */
 }
 
 /* =========================================================
@@ -280,7 +284,7 @@ export async function explodeSystem() {
   if (busy) return exploded;
 
   if (!items.length) {
-    console.warn("[SYSTEM EXPLODE] No registered parts.");
+    // console.warn("[SYSTEM EXPLODE] No registered parts.");
     return exploded;
   }
 
@@ -298,7 +302,7 @@ export async function implodeSystem() {
   if (busy) return exploded;
 
   if (!items.length) {
-    console.warn("[SYSTEM EXPLODE] No registered parts.");
+    // console.warn("[SYSTEM EXPLODE] No registered parts.");
     return exploded;
   }
 

@@ -2679,5 +2679,15 @@
     },
     "updatedAt": "2026-06-16T12:10:50.918Z",
     "sfiaId": "SFIA_SFIA_1_1_1_MAIN_DECK"
+  },
+  "SFIA_13_DUPLEX_OIL_STRAINER": {
+    "title": "DUPLEX OIL STRAINER",
+    "description": "No description available for this component yet.",
+    "documents": {
+      "documentation": null,
+      "schematics": null,
+      "maintenance": null
+    },
+    "updatedAt": "2026-06-17T14:06:43.188Z"
   }
 }

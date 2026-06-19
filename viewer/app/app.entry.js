@@ -411,8 +411,8 @@ async function updateSystemStatus() {
     <div class="status-item">
       <img
         class="status-svg"
-        src="/images/loading.svg"
-        alt=""
+        src="/images/api.svg"
+        alt="API"
       >
 
       <strong>CHECKING</strong>

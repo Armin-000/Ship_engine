@@ -743,7 +743,7 @@ window.addEventListener("engine:sidebar-selected", (e) => {
   activeMainSystemRoot = foundRoot;
   systemExploded = false;
 
-  console.log("[SIDEBAR] Selected system root:", foundRoot.name);
+// console.log("[SIDEBAR] Selected system root:", foundRoot.name);
 
   prepareSystemExplode(foundRoot, {
     config: SYSTEM_EXPLODE_CONFIG,
